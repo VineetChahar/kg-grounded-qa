@@ -1,0 +1,5466 @@
+[
+  {
+    "question": "Which package contains the module `werkzeug.testapp`?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "werkzeug",
+    "generated_answer": "werkzeug",
+    "seeds": [
+      "werkzeug.testapp",
+      "werkzeug.testapp._get_werkzeug_version",
+      "werkzeug.testapp.iter_sys_path"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.testapp"
+      ],
+      [
+        "werkzeug.testapp",
+        "IMPORTS",
+        "werkzeug.wrappers.request"
+      ],
+      [
+        "werkzeug.testapp",
+        "IMPORTS",
+        "werkzeug.wrappers.response"
+      ],
+      [
+        "werkzeug.testapp.test_app",
+        "CALLS",
+        "werkzeug.testapp._get_werkzeug_version"
+      ],
+      [
+        "werkzeug.testapp",
+        "CONTAINS",
+        "werkzeug.testapp._get_werkzeug_version"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.test"
+      ],
+      [
+        "werkzeug.test",
+        "IMPORTS",
+        "werkzeug.wrappers.request"
+      ],
+      [
+        "werkzeug.wrappers.request",
+        "IMPORTS",
+        "werkzeug.test"
+      ],
+      [
+        "werkzeug.test",
+        "IMPORTS",
+        "werkzeug.wrappers.response"
+      ],
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.test"
+      ],
+      [
+        "werkzeug.testapp.test_app",
+        "CALLS",
+        "werkzeug.testapp.iter_sys_path"
+      ],
+      [
+        "werkzeug.testapp",
+        "CONTAINS",
+        "werkzeug.testapp.test_app"
+      ]
+    ],
+    "latency_s": 15.37,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "Which module defines the class `werkzeug.debug.DebuggedApplication`?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "werkzeug.debug",
+    "generated_answer": "werkzeug.debug",
+    "seeds": [
+      "werkzeug.debug.DebuggedApplication",
+      "werkzeug.debug.DebuggedApplication.debug_application",
+      "werkzeug.debug.DebuggedApplication.check_host_trust"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.debug",
+        "CONTAINS",
+        "werkzeug.debug.DebuggedApplication"
+      ],
+      [
+        "werkzeug.debug.DebuggedApplication.debug_application",
+        "CALLS",
+        "werkzeug.debug.tbtools.DebugTraceback"
+      ],
+      [
+        "werkzeug.debug.DebuggedApplication",
+        "CONTAINS",
+        "werkzeug.debug.DebuggedApplication.pin"
+      ],
+      [
+        "werkzeug.debug.DebuggedApplication",
+        "CONTAINS",
+        "werkzeug.debug.DebuggedApplication.check_host_trust"
+      ],
+      [
+        "werkzeug.debug.DebuggedApplication",
+        "CONTAINS",
+        "werkzeug.debug.DebuggedApplication.__init__"
+      ],
+      [
+        "werkzeug.debug.DebuggedApplication.execute_command",
+        "CALLS",
+        "werkzeug.debug.DebuggedApplication.check_host_trust"
+      ],
+      [
+        "werkzeug.debug.DebuggedApplication.log_pin_request",
+        "CALLS",
+        "werkzeug.debug.DebuggedApplication.check_host_trust"
+      ],
+      [
+        "werkzeug.debug.DebuggedApplication",
+        "CONTAINS",
+        "werkzeug.debug.DebuggedApplication.__call__"
+      ],
+      [
+        "werkzeug.debug.DebuggedApplication.debug_application",
+        "CALLS",
+        "werkzeug.debug.DebuggedApplication.check_host_trust"
+      ],
+      [
+        "werkzeug.debug.DebuggedApplication.pin_auth",
+        "CALLS",
+        "werkzeug.debug.DebuggedApplication.check_host_trust"
+      ],
+      [
+        "werkzeug.debug.DebuggedApplication",
+        "CONTAINS",
+        "werkzeug.debug.DebuggedApplication.debug_application"
+      ],
+      [
+        "werkzeug.debug.DebuggedApplication",
+        "CONTAINS",
+        "werkzeug.debug.DebuggedApplication.get_resource"
+      ]
+    ],
+    "latency_s": 0.57,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "What does `werkzeug.quantum_routing.TeleportHandler` inherit from?",
+    "category": "out_of_scope",
+    "hops": 0,
+    "gold_answer": null,
+    "generated_answer": "I don't know",
+    "seeds": [
+      "werkzeug"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.urls"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.routing.exceptions"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.debug"
+      ],
+      [
+        "werkzeug.debug",
+        "IMPORTS",
+        "werkzeug"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.security"
+      ],
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "werkzeug._internal"
+      ],
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "werkzeug.wrappers"
+      ],
+      [
+        "werkzeug.routing.map",
+        "IMPORTS",
+        "werkzeug.urls"
+      ],
+      [
+        "werkzeug.routing.exceptions",
+        "IMPORTS",
+        "werkzeug.routing.map"
+      ],
+      [
+        "werkzeug.routing.map",
+        "IMPORTS",
+        "werkzeug.routing.exceptions"
+      ],
+      [
+        "werkzeug.wrappers.request",
+        "IMPORTS",
+        "werkzeug.utils"
+      ]
+    ],
+    "latency_s": 0.42
+  },
+  {
+    "question": "Which class defines the method `click.testing.CliRunner.isolated_filesystem`?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "click.testing.CliRunner",
+    "generated_answer": "click.testing.CliRunner",
+    "seeds": [
+      "click.testing.CliRunner.isolated_filesystem",
+      "click.testing.CliRunner",
+      "click.testing"
+    ],
+    "retrieved_triples": [
+      [
+        "click.testing",
+        "CONTAINS",
+        "click.testing.CliRunner"
+      ],
+      [
+        "click.testing.CliRunner",
+        "CONTAINS",
+        "click.testing.CliRunner.__init__"
+      ],
+      [
+        "click.testing.CliRunner",
+        "CONTAINS",
+        "click.testing.CliRunner.invoke"
+      ],
+      [
+        "click.testing.CliRunner",
+        "CONTAINS",
+        "click.testing.CliRunner.isolation"
+      ],
+      [
+        "click.testing.CliRunner",
+        "CONTAINS",
+        "click.testing.CliRunner.get_default_prog_name"
+      ],
+      [
+        "click.testing",
+        "IMPORTS",
+        "click.core"
+      ],
+      [
+        "click.testing.CliRunner",
+        "CONTAINS",
+        "click.testing.CliRunner.isolated_filesystem"
+      ],
+      [
+        "click.testing",
+        "CONTAINS",
+        "click.testing.Result"
+      ],
+      [
+        "click.testing",
+        "CONTAINS",
+        "click.testing._NamedTextIOWrapper"
+      ],
+      [
+        "click.testing",
+        "IMPORTS",
+        "click._compat"
+      ],
+      [
+        "click.testing",
+        "CONTAINS",
+        "click.testing.EchoingStdin"
+      ],
+      [
+        "click.testing.CliRunner.invoke",
+        "CALLS",
+        "click.testing.Result"
+      ]
+    ],
+    "latency_s": 0.53,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "Which class defines the method `jinja2.exceptions.TemplateError.__init__`?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "jinja2.exceptions.TemplateError",
+    "generated_answer": "jinja2.exceptions.TemplateError",
+    "seeds": [
+      "jinja2.exceptions.TemplateError.__init__",
+      "jinja2.exceptions.TemplateError",
+      "jinja2.exceptions"
+    ],
+    "retrieved_triples": [
+      [
+        "jinja2.exceptions.TemplateRuntimeError",
+        "INHERITS",
+        "jinja2.exceptions.TemplateError"
+      ],
+      [
+        "jinja2.exceptions",
+        "CONTAINS",
+        "jinja2.exceptions.TemplateRuntimeError"
+      ],
+      [
+        "jinja2.exceptions",
+        "CONTAINS",
+        "jinja2.exceptions.TemplateError"
+      ],
+      [
+        "jinja2.exceptions",
+        "CONTAINS",
+        "jinja2.exceptions.UndefinedError"
+      ],
+      [
+        "jinja2.exceptions",
+        "CONTAINS",
+        "jinja2.exceptions.SecurityError"
+      ],
+      [
+        "jinja2.exceptions",
+        "CONTAINS",
+        "jinja2.exceptions.TemplateNotFound"
+      ],
+      [
+        "jinja2.exceptions",
+        "CONTAINS",
+        "jinja2.exceptions.TemplateAssertionError"
+      ],
+      [
+        "jinja2.exceptions.TemplateNotFound",
+        "INHERITS",
+        "jinja2.exceptions.TemplateError"
+      ],
+      [
+        "jinja2.exceptions.TemplateError",
+        "CONTAINS",
+        "jinja2.exceptions.TemplateError.__init__"
+      ],
+      [
+        "jinja2.exceptions.TemplateSyntaxError",
+        "INHERITS",
+        "jinja2.exceptions.TemplateError"
+      ],
+      [
+        "jinja2.exceptions.TemplateError",
+        "CONTAINS",
+        "jinja2.exceptions.TemplateError.message"
+      ],
+      [
+        "jinja2.exceptions.UndefinedError",
+        "INHERITS",
+        "jinja2.exceptions.TemplateRuntimeError"
+      ]
+    ],
+    "latency_s": 0.56,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "Name a class defined in a module that `werkzeug.utils` imports.",
+    "category": "answerable",
+    "hops": 2,
+    "gold_answer": "markupsafe.Markup",
+    "generated_answer": "werkzeug.utils.ImportStringError",
+    "seeds": [
+      "werkzeug.utils",
+      "werkzeug.utils.cached_property.__delete__",
+      "werkzeug.utils.ImportStringError.__init__"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "werkzeug._internal"
+      ],
+      [
+        "werkzeug.utils.ImportStringError",
+        "CONTAINS",
+        "werkzeug.utils.ImportStringError.__init__"
+      ],
+      [
+        "werkzeug.test",
+        "IMPORTS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug.utils",
+        "CONTAINS",
+        "werkzeug.utils.ImportStringError"
+      ],
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "werkzeug.wrappers"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug.wrappers.request",
+        "IMPORTS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug.utils.ImportStringError.__init__",
+        "CALLS",
+        "werkzeug.utils.import_string"
+      ],
+      [
+        "werkzeug._internal",
+        "CONTAINS",
+        "werkzeug._internal._Missing"
+      ],
+      [
+        "werkzeug.utils",
+        "CONTAINS",
+        "werkzeug.utils.import_string"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.local"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.sansio"
+      ]
+    ],
+    "latency_s": 0.53,
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "exact_match": false,
+    "f1": 0.0
+  },
+  {
+    "question": "Which package contains the module `flask.views`?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "flask",
+    "generated_answer": "flask",
+    "seeds": [
+      "flask.views",
+      "flask.views.MethodView.__init_subclass__",
+      "flask.views.MethodView.dispatch_request"
+    ],
+    "retrieved_triples": [
+      [
+        "flask",
+        "CONTAINS",
+        "flask.views"
+      ],
+      [
+        "flask.views",
+        "IMPORTS",
+        "flask"
+      ],
+      [
+        "flask.views",
+        "IMPORTS",
+        "flask.globals"
+      ],
+      [
+        "flask.views.MethodView",
+        "CONTAINS",
+        "flask.views.MethodView.__init_subclass__"
+      ],
+      [
+        "flask.views",
+        "CONTAINS",
+        "flask.views.MethodView"
+      ],
+      [
+        "flask.views.MethodView",
+        "CONTAINS",
+        "flask.views.MethodView.dispatch_request"
+      ],
+      [
+        "flask",
+        "CONTAINS",
+        "flask.app"
+      ],
+      [
+        "flask.app",
+        "IMPORTS",
+        "flask"
+      ],
+      [
+        "flask.app",
+        "IMPORTS",
+        "flask.globals"
+      ],
+      [
+        "flask.globals",
+        "IMPORTS",
+        "flask.app"
+      ],
+      [
+        "flask.views",
+        "CONTAINS",
+        "flask.views.View"
+      ],
+      [
+        "flask.views.MethodView.dispatch_request",
+        "CALLS",
+        "flask.app.Flask.ensure_sync"
+      ]
+    ],
+    "latency_s": 0.38,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "What module does `werkzeug.middleware.lint` import?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "werkzeug.wsgi",
+    "generated_answer": "werkzeug.wsgi",
+    "seeds": [
+      "werkzeug.middleware.lint",
+      "werkzeug.middleware.lint.LintMiddleware.check_start_response",
+      "werkzeug.middleware.lint.LintMiddleware.check_iterator"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.middleware.lint.LintMiddleware.__call__",
+        "CALLS",
+        "werkzeug.middleware.lint.LintMiddleware.check_start_response"
+      ],
+      [
+        "werkzeug.middleware.lint.LintMiddleware.__call__",
+        "CALLS",
+        "werkzeug.middleware.lint.LintMiddleware.check_iterator"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.middleware.lint"
+      ],
+      [
+        "werkzeug.middleware.lint.LintMiddleware.check_start_response",
+        "CALLS",
+        "werkzeug.middleware.lint.check_type"
+      ],
+      [
+        "werkzeug.middleware.lint",
+        "CONTAINS",
+        "werkzeug.middleware.lint.ErrorStream"
+      ],
+      [
+        "werkzeug.middleware.lint",
+        "IMPORTS",
+        "werkzeug.wsgi"
+      ],
+      [
+        "werkzeug.middleware.lint",
+        "IMPORTS",
+        "werkzeug.http"
+      ],
+      [
+        "werkzeug.middleware.lint.LintMiddleware.check_start_response",
+        "CALLS",
+        "werkzeug.middleware.lint.LintMiddleware.check_headers"
+      ],
+      [
+        "werkzeug.middleware.lint",
+        "CONTAINS",
+        "werkzeug.middleware.lint.WSGIWarning"
+      ],
+      [
+        "werkzeug.middleware.lint",
+        "CONTAINS",
+        "werkzeug.middleware.lint.HTTPWarning"
+      ],
+      [
+        "werkzeug.middleware.lint.LintMiddleware",
+        "CONTAINS",
+        "werkzeug.middleware.lint.LintMiddleware.check_start_response"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.utils"
+      ]
+    ],
+    "latency_s": 0.57,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "What class does `flask.json.tag.TagUUID` inherit from?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "flask.json.tag.JSONTag",
+    "generated_answer": "flask.json.tag.JSONTag",
+    "seeds": [
+      "flask.json.tag.TagUUID",
+      "flask.json.tag.TagUUID.to_python",
+      "flask.json.tag.TagUUID.to_json"
+    ],
+    "retrieved_triples": [
+      [
+        "flask.json.tag.TagUUID",
+        "CONTAINS",
+        "flask.json.tag.TagUUID.to_python"
+      ],
+      [
+        "flask.json.tag.TagUUID",
+        "CONTAINS",
+        "flask.json.tag.TagUUID.to_json"
+      ],
+      [
+        "flask.json.tag.TagUUID",
+        "INHERITS",
+        "flask.json.tag.JSONTag"
+      ],
+      [
+        "flask.json.tag.TagUUID",
+        "CONTAINS",
+        "flask.json.tag.TagUUID.check"
+      ],
+      [
+        "flask.json.tag.TagBytes",
+        "INHERITS",
+        "flask.json.tag.JSONTag"
+      ],
+      [
+        "flask.json.tag",
+        "CONTAINS",
+        "flask.json.tag.TagBytes"
+      ],
+      [
+        "flask.json.tag.TagTuple",
+        "INHERITS",
+        "flask.json.tag.JSONTag"
+      ],
+      [
+        "flask.json.tag",
+        "CONTAINS",
+        "flask.json.tag.TagTuple"
+      ],
+      [
+        "flask.json.tag.TagDateTime",
+        "INHERITS",
+        "flask.json.tag.JSONTag"
+      ],
+      [
+        "flask.json.tag",
+        "CONTAINS",
+        "flask.json.tag.TagDateTime"
+      ],
+      [
+        "flask.json.tag",
+        "CONTAINS",
+        "flask.json.tag.TagUUID"
+      ],
+      [
+        "flask.json.tag.TagBytes",
+        "CONTAINS",
+        "flask.json.tag.TagBytes.to_python"
+      ]
+    ],
+    "latency_s": 0.51,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "Which package ultimately contains the class `flask.ctx._AppCtxGlobals` (via its module)?",
+    "category": "answerable",
+    "hops": 2,
+    "gold_answer": "flask",
+    "generated_answer": "flask",
+    "seeds": [
+      "flask.ctx._AppCtxGlobals",
+      "flask.ctx._AppCtxGlobals.__contains__",
+      "flask.ctx._AppCtxGlobals.__getattr__"
+    ],
+    "retrieved_triples": [
+      [
+        "flask.ctx._AppCtxGlobals",
+        "CONTAINS",
+        "flask.ctx._AppCtxGlobals.__iter__"
+      ],
+      [
+        "flask.ctx._AppCtxGlobals",
+        "CONTAINS",
+        "flask.ctx._AppCtxGlobals.__repr__"
+      ],
+      [
+        "flask.ctx._AppCtxGlobals",
+        "CONTAINS",
+        "flask.ctx._AppCtxGlobals.__contains__"
+      ],
+      [
+        "flask.ctx._AppCtxGlobals",
+        "CONTAINS",
+        "flask.ctx._AppCtxGlobals.__getattr__"
+      ],
+      [
+        "flask.ctx._AppCtxGlobals",
+        "CONTAINS",
+        "flask.ctx._AppCtxGlobals.__delattr__"
+      ],
+      [
+        "flask.ctx._AppCtxGlobals",
+        "CONTAINS",
+        "flask.ctx._AppCtxGlobals.pop"
+      ],
+      [
+        "flask.ctx._AppCtxGlobals",
+        "CONTAINS",
+        "flask.ctx._AppCtxGlobals.__setattr__"
+      ],
+      [
+        "flask.ctx._AppCtxGlobals.__repr__",
+        "CALLS",
+        "flask.ctx._AppCtxGlobals.get"
+      ],
+      [
+        "flask.ctx.has_request_context",
+        "CALLS",
+        "flask.ctx._AppCtxGlobals.get"
+      ],
+      [
+        "flask.ctx.AppContext.pop",
+        "CALLS",
+        "flask.ctx._AppCtxGlobals.get"
+      ],
+      [
+        "flask.ctx.after_this_request",
+        "CALLS",
+        "flask.ctx._AppCtxGlobals.get"
+      ],
+      [
+        "flask.ctx.has_app_context",
+        "CALLS",
+        "flask.ctx._AppCtxGlobals.get"
+      ]
+    ],
+    "latency_s": 0.54,
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "Which class defines the method `click.core.Group.to_info_dict`?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "click.core.Group",
+    "generated_answer": "click.core.Group defines the method `click.core.Group.to_info_dict`",
+    "seeds": [
+      "click.core.Group.to_info_dict",
+      "click.core.Group",
+      "click.core"
+    ],
+    "retrieved_triples": [
+      [
+        "click.core.Group",
+        "CONTAINS",
+        "click.core.Group.to_info_dict"
+      ],
+      [
+        "click.core.Group.to_info_dict",
+        "CALLS",
+        "click.core.Group.get_command"
+      ],
+      [
+        "click.core",
+        "CONTAINS",
+        "click.core.Group"
+      ],
+      [
+        "click.core.Group",
+        "CONTAINS",
+        "click.core.Group.__init__"
+      ],
+      [
+        "click.core.Group",
+        "CONTAINS",
+        "click.core.Group.get_command"
+      ],
+      [
+        "click.core",
+        "IMPORTS",
+        "click.utils"
+      ],
+      [
+        "click.core.Group",
+        "CONTAINS",
+        "click.core.Group.add_command"
+      ],
+      [
+        "click.core",
+        "IMPORTS",
+        "click._utils"
+      ],
+      [
+        "click.core.Group",
+        "CONTAINS",
+        "click.core.Group.parse_args"
+      ],
+      [
+        "click.core",
+        "CONTAINS",
+        "click.core._MultiCommand"
+      ],
+      [
+        "click.core",
+        "CONTAINS",
+        "click.core.Option"
+      ],
+      [
+        "click.core._MultiCommand",
+        "INHERITS",
+        "click.core.Group"
+      ]
+    ],
+    "latency_s": 0.59,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 0.4
+  },
+  {
+    "question": "Name a class defined in a module that `jinja2.ext` imports.",
+    "category": "answerable",
+    "hops": 2,
+    "gold_answer": "jinja2.runtime.DebugUndefined",
+    "generated_answer": "jinja2.ext.InternationalizationExtension",
+    "seeds": [
+      "jinja2.ext",
+      "jinja2.ext.InternationalizationExtension._install_callables",
+      "jinja2.ext.InternationalizationExtension._trim_whitespace"
+    ],
+    "retrieved_triples": [
+      [
+        "jinja2.ext",
+        "IMPORTS",
+        "jinja2.utils"
+      ],
+      [
+        "jinja2.environment",
+        "IMPORTS",
+        "jinja2.ext"
+      ],
+      [
+        "jinja2.ext",
+        "IMPORTS",
+        "jinja2.environment"
+      ],
+      [
+        "jinja2.ext",
+        "IMPORTS",
+        "jinja2.exceptions"
+      ],
+      [
+        "jinja2.ext",
+        "IMPORTS",
+        "jinja2.runtime"
+      ],
+      [
+        "jinja2.ext",
+        "CONTAINS",
+        "jinja2.ext.ExprStmtExtension"
+      ],
+      [
+        "jinja2.ext.InternationalizationExtension._install_callables",
+        "CALLS",
+        "jinja2.ext._make_new_gettext"
+      ],
+      [
+        "jinja2.ext.InternationalizationExtension._install_callables",
+        "CALLS",
+        "jinja2.ext._make_new_npgettext"
+      ],
+      [
+        "jinja2.ext.InternationalizationExtension._install_callables",
+        "CALLS",
+        "jinja2.ext._make_new_ngettext"
+      ],
+      [
+        "jinja2.ext.InternationalizationExtension._install_callables",
+        "CALLS",
+        "jinja2.ext._make_new_pgettext"
+      ],
+      [
+        "jinja2.ext.InternationalizationExtension._install",
+        "CALLS",
+        "jinja2.ext.InternationalizationExtension._install_callables"
+      ],
+      [
+        "jinja2.utils",
+        "CONTAINS",
+        "jinja2.utils.Namespace"
+      ]
+    ],
+    "latency_s": 0.18,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 0.5,
+    "exact_match": false,
+    "f1": 0.3333333333333333
+  },
+  {
+    "question": "What does `jinja2.blockchain.SmartTemplate` inherit from?",
+    "category": "out_of_scope",
+    "hops": 0,
+    "gold_answer": null,
+    "generated_answer": "I don't know",
+    "seeds": [
+      "jinja2"
+    ],
+    "retrieved_triples": [
+      [
+        "jinja2",
+        "CONTAINS",
+        "jinja2.environment"
+      ],
+      [
+        "jinja2.environment",
+        "IMPORTS",
+        "jinja2"
+      ],
+      [
+        "jinja2",
+        "CONTAINS",
+        "jinja2.defaults"
+      ],
+      [
+        "jinja2",
+        "CONTAINS",
+        "jinja2.utils"
+      ],
+      [
+        "jinja2",
+        "CONTAINS",
+        "jinja2.constants"
+      ],
+      [
+        "jinja2",
+        "CONTAINS",
+        "jinja2.runtime"
+      ],
+      [
+        "jinja2.environment",
+        "CONTAINS",
+        "jinja2.environment.TemplateModule"
+      ],
+      [
+        "jinja2.environment",
+        "CONTAINS",
+        "jinja2.environment.Template"
+      ],
+      [
+        "jinja2.environment",
+        "CONTAINS",
+        "jinja2.environment.TemplateExpression"
+      ],
+      [
+        "jinja2.environment.Template",
+        "CONTAINS",
+        "jinja2.environment.Template.from_code"
+      ],
+      [
+        "jinja2.environment.Template",
+        "CONTAINS",
+        "jinja2.environment.Template._get_default_module"
+      ],
+      [
+        "jinja2.environment.TemplateModule",
+        "CONTAINS",
+        "jinja2.environment.TemplateModule.__html__"
+      ]
+    ],
+    "latency_s": 0.47
+  },
+  {
+    "question": "What class does `werkzeug.exceptions.HTTPVersionNotSupported` inherit from?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "werkzeug.exceptions.HTTPException",
+    "generated_answer": "werkzeug.exceptions",
+    "seeds": [
+      "werkzeug.exceptions.HTTPVersionNotSupported",
+      "werkzeug.exceptions",
+      "werkzeug"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.exceptions",
+        "CONTAINS",
+        "werkzeug.exceptions.HTTPVersionNotSupported"
+      ],
+      [
+        "werkzeug.exceptions",
+        "CONTAINS",
+        "werkzeug.exceptions.MisdirectedRequest"
+      ],
+      [
+        "werkzeug.exceptions",
+        "CONTAINS",
+        "werkzeug.exceptions.FailedDependency"
+      ],
+      [
+        "werkzeug.exceptions",
+        "CONTAINS",
+        "werkzeug.exceptions.Conflict"
+      ],
+      [
+        "werkzeug.exceptions",
+        "IMPORTS",
+        "werkzeug.http"
+      ],
+      [
+        "werkzeug.exceptions",
+        "CONTAINS",
+        "werkzeug.exceptions.RequestedRangeNotSatisfiable"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.urls"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.debug"
+      ],
+      [
+        "werkzeug.debug",
+        "IMPORTS",
+        "werkzeug"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.http"
+      ],
+      [
+        "werkzeug.http",
+        "IMPORTS",
+        "werkzeug"
+      ]
+    ],
+    "latency_s": 0.4,
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "exact_match": false,
+    "f1": 0.8
+  },
+  {
+    "question": "What class does `werkzeug.routing.rules.EndpointPrefix` inherit from?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "werkzeug.routing.rules.RuleFactory",
+    "generated_answer": "werkzeug.routing.rules.RuleFactory",
+    "seeds": [
+      "werkzeug.routing.rules.EndpointPrefix",
+      "werkzeug.routing.rules.EndpointPrefix.get_rules",
+      "werkzeug.routing.rules.EndpointPrefix.__init__"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.routing.rules.EndpointPrefix",
+        "CONTAINS",
+        "werkzeug.routing.rules.EndpointPrefix.__init__"
+      ],
+      [
+        "werkzeug.routing.rules.EndpointPrefix",
+        "CONTAINS",
+        "werkzeug.routing.rules.EndpointPrefix.get_rules"
+      ],
+      [
+        "werkzeug.routing.rules",
+        "CONTAINS",
+        "werkzeug.routing.rules.EndpointPrefix"
+      ],
+      [
+        "werkzeug.routing.rules.EndpointPrefix",
+        "INHERITS",
+        "werkzeug.routing.rules.RuleFactory"
+      ],
+      [
+        "werkzeug.routing.rules.EndpointPrefix.get_rules",
+        "CALLS",
+        "werkzeug.routing.rules.Rule.empty"
+      ],
+      [
+        "werkzeug.routing.rules",
+        "CONTAINS",
+        "werkzeug.routing.rules.Rule"
+      ],
+      [
+        "werkzeug.routing.rules.Rule",
+        "INHERITS",
+        "werkzeug.routing.rules.RuleFactory"
+      ],
+      [
+        "werkzeug.routing.rules",
+        "CONTAINS",
+        "werkzeug.routing.rules.RuleTemplate"
+      ],
+      [
+        "werkzeug.routing.rules.Rule",
+        "CONTAINS",
+        "werkzeug.routing.rules.Rule.empty"
+      ],
+      [
+        "werkzeug.routing.rules",
+        "CONTAINS",
+        "werkzeug.routing.rules.Weighting"
+      ],
+      [
+        "werkzeug.routing.rules",
+        "CONTAINS",
+        "werkzeug.routing.rules.RuleTemplateFactory"
+      ],
+      [
+        "werkzeug.routing.rules.RuleTemplateFactory",
+        "INHERITS",
+        "werkzeug.routing.rules.RuleFactory"
+      ]
+    ],
+    "latency_s": 0.57,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "What does the function `werkzeug.wrappers.Response.levitate` call?",
+    "category": "out_of_scope",
+    "hops": 0,
+    "gold_answer": null,
+    "generated_answer": "I don't know",
+    "seeds": [
+      "werkzeug.wrappers.response",
+      "werkzeug.wrappers",
+      "werkzeug"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.wrappers.response"
+      ],
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.wrappers.request"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.wrappers.request"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.wrappers"
+      ],
+      [
+        "werkzeug.wrappers",
+        "IMPORTS",
+        "werkzeug"
+      ],
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "werkzeug.wrappers.response"
+      ],
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "werkzeug.wrappers"
+      ],
+      [
+        "werkzeug.test",
+        "IMPORTS",
+        "werkzeug.wrappers.response"
+      ],
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.test"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.sansio.response"
+      ]
+    ],
+    "latency_s": 0.42
+  },
+  {
+    "question": "Name a class defined in a module that `jinja2.runtime` imports.",
+    "category": "answerable",
+    "hops": 2,
+    "gold_answer": "jinja2.environment.TemplateExpression",
+    "generated_answer": "jinja2.runtime.Macro",
+    "seeds": [
+      "jinja2.runtime",
+      "jinja2.runtime.Undefined._fail_with_undefined_error",
+      "jinja2.runtime.ChainableUndefined.__getattr__"
+    ],
+    "retrieved_triples": [
+      [
+        "jinja2.runtime",
+        "IMPORTS",
+        "jinja2.utils"
+      ],
+      [
+        "jinja2.utils",
+        "IMPORTS",
+        "jinja2.runtime"
+      ],
+      [
+        "jinja2.environment",
+        "IMPORTS",
+        "jinja2.runtime"
+      ],
+      [
+        "jinja2.runtime",
+        "IMPORTS",
+        "jinja2.environment"
+      ],
+      [
+        "jinja2.runtime",
+        "CONTAINS",
+        "jinja2.runtime.Macro"
+      ],
+      [
+        "jinja2.exceptions",
+        "IMPORTS",
+        "jinja2.runtime"
+      ],
+      [
+        "jinja2.utils",
+        "CONTAINS",
+        "jinja2.utils.Namespace"
+      ],
+      [
+        "jinja2.runtime.make_logging_undefined",
+        "CALLS",
+        "jinja2.runtime.Undefined._fail_with_undefined_error"
+      ],
+      [
+        "jinja2.runtime.Undefined",
+        "CONTAINS",
+        "jinja2.runtime.Undefined._fail_with_undefined_error"
+      ],
+      [
+        "jinja2.exceptions.TemplateNotFound.__init__",
+        "CALLS",
+        "jinja2.runtime.Undefined._fail_with_undefined_error"
+      ],
+      [
+        "jinja2.environment.Environment.select_template",
+        "CALLS",
+        "jinja2.runtime.Undefined._fail_with_undefined_error"
+      ],
+      [
+        "jinja2.runtime.Undefined.__getattr__",
+        "CALLS",
+        "jinja2.runtime.Undefined._fail_with_undefined_error"
+      ]
+    ],
+    "latency_s": 0.19,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 0.5,
+    "exact_match": false,
+    "f1": 0.3333333333333333
+  },
+  {
+    "question": "Which module defines the class `flask.debughelpers.FormDataRoutingRedirect`?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "flask.debughelpers",
+    "generated_answer": "flask.debughelpers defines the class `flask.debughelpers.FormDataRoutingRedirect`",
+    "seeds": [
+      "flask.debughelpers.FormDataRoutingRedirect",
+      "flask.debughelpers.FormDataRoutingRedirect.__init__",
+      "flask.debughelpers"
+    ],
+    "retrieved_triples": [
+      [
+        "flask.debughelpers.FormDataRoutingRedirect",
+        "CONTAINS",
+        "flask.debughelpers.FormDataRoutingRedirect.__init__"
+      ],
+      [
+        "flask.debughelpers",
+        "CONTAINS",
+        "flask.debughelpers.FormDataRoutingRedirect"
+      ],
+      [
+        "flask.app",
+        "IMPORTS",
+        "flask.debughelpers"
+      ],
+      [
+        "flask.debughelpers",
+        "IMPORTS",
+        "flask.blueprints"
+      ],
+      [
+        "flask.templating",
+        "IMPORTS",
+        "flask.debughelpers"
+      ],
+      [
+        "flask.debughelpers",
+        "IMPORTS",
+        "flask.wrappers"
+      ],
+      [
+        "flask.wrappers",
+        "IMPORTS",
+        "flask.debughelpers"
+      ],
+      [
+        "flask.app.Flask.raise_routing_exception",
+        "CALLS",
+        "flask.debughelpers.FormDataRoutingRedirect"
+      ],
+      [
+        "flask.app",
+        "IMPORTS",
+        "flask.typing"
+      ],
+      [
+        "flask.blueprints",
+        "IMPORTS",
+        "flask.cli"
+      ],
+      [
+        "flask.cli",
+        "IMPORTS",
+        "flask.app"
+      ],
+      [
+        "flask.app",
+        "IMPORTS",
+        "flask.ctx"
+      ]
+    ],
+    "latency_s": 0.75,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 0.4
+  },
+  {
+    "question": "Which package ultimately contains the function `jinja2.utils.is_undefined` (via its module)?",
+    "category": "answerable",
+    "hops": 2,
+    "gold_answer": "jinja2",
+    "generated_answer": "jinja2",
+    "seeds": [
+      "jinja2.utils.is_undefined",
+      "jinja2.utils",
+      "jinja2"
+    ],
+    "retrieved_triples": [
+      [
+        "jinja2",
+        "CONTAINS",
+        "jinja2.utils"
+      ],
+      [
+        "jinja2",
+        "CONTAINS",
+        "jinja2.constants"
+      ],
+      [
+        "jinja2.utils",
+        "IMPORTS",
+        "jinja2.constants"
+      ],
+      [
+        "jinja2",
+        "CONTAINS",
+        "jinja2.debug"
+      ],
+      [
+        "jinja2.runtime",
+        "IMPORTS",
+        "jinja2.utils"
+      ],
+      [
+        "jinja2.utils",
+        "IMPORTS",
+        "jinja2.runtime"
+      ],
+      [
+        "jinja2.debug",
+        "IMPORTS",
+        "jinja2.utils"
+      ],
+      [
+        "jinja2.defaults",
+        "IMPORTS",
+        "jinja2.utils"
+      ],
+      [
+        "jinja2",
+        "CONTAINS",
+        "jinja2.exceptions"
+      ],
+      [
+        "jinja2",
+        "CONTAINS",
+        "jinja2.defaults"
+      ],
+      [
+        "jinja2",
+        "CONTAINS",
+        "jinja2.async_utils"
+      ],
+      [
+        "jinja2.utils",
+        "CONTAINS",
+        "jinja2.utils.is_undefined"
+      ]
+    ],
+    "latency_s": 0.42,
+    "retrieval_precision": 0.16666666666666666,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "What class does `werkzeug.exceptions.NotImplemented` inherit from?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "werkzeug.exceptions.HTTPException",
+    "generated_answer": "werkzeug.exceptions",
+    "seeds": [
+      "werkzeug.exceptions.NotImplemented",
+      "werkzeug.exceptions",
+      "werkzeug"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.exceptions",
+        "CONTAINS",
+        "werkzeug.exceptions.FailedDependency"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug.exceptions",
+        "CONTAINS",
+        "werkzeug.exceptions.PreconditionFailed"
+      ],
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "werkzeug.exceptions"
+      ],
+      [
+        "werkzeug.exceptions",
+        "CONTAINS",
+        "werkzeug.exceptions.NotImplemented"
+      ],
+      [
+        "werkzeug.exceptions",
+        "CONTAINS",
+        "werkzeug.exceptions.Conflict"
+      ],
+      [
+        "werkzeug.exceptions",
+        "CONTAINS",
+        "werkzeug.exceptions.Locked"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.routing.exceptions"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.debug"
+      ],
+      [
+        "werkzeug.debug",
+        "IMPORTS",
+        "werkzeug"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.test"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.wrappers"
+      ]
+    ],
+    "latency_s": 0.44,
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "exact_match": false,
+    "f1": 0.8
+  },
+  {
+    "question": "What does the function `click.core.Command.self_destruct` call?",
+    "category": "out_of_scope",
+    "hops": 0,
+    "gold_answer": null,
+    "generated_answer": "I don't know",
+    "seeds": [
+      "click.core.Command",
+      "click.core",
+      "click"
+    ],
+    "retrieved_triples": [
+      [
+        "click.core.Command",
+        "CONTAINS",
+        "click.core.Command.__repr__"
+      ],
+      [
+        "click.core.Command",
+        "CONTAINS",
+        "click.core.Command.invoke"
+      ],
+      [
+        "click.core",
+        "CONTAINS",
+        "click.core._BaseCommand"
+      ],
+      [
+        "click.core.Command",
+        "CONTAINS",
+        "click.core.Command.parse_args"
+      ],
+      [
+        "click.core.Command",
+        "CONTAINS",
+        "click.core.Command.__init__"
+      ],
+      [
+        "click.core",
+        "CONTAINS",
+        "click.core.Context"
+      ],
+      [
+        "click.core._BaseCommand",
+        "INHERITS",
+        "click.core.Command"
+      ],
+      [
+        "click.core",
+        "IMPORTS",
+        "click.utils"
+      ],
+      [
+        "click.core",
+        "IMPORTS",
+        "click._utils"
+      ],
+      [
+        "click.core.Command",
+        "CONTAINS",
+        "click.core.Command.get_params"
+      ],
+      [
+        "click.core",
+        "CONTAINS",
+        "click.core._echo_aborted"
+      ],
+      [
+        "click",
+        "CONTAINS",
+        "click.core"
+      ]
+    ],
+    "latency_s": 0.48
+  },
+  {
+    "question": "Which class defines the method `jinja2.utils.LRUCache.__delitem__`?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "jinja2.utils.LRUCache",
+    "generated_answer": "jinja2.utils.LRUCache",
+    "seeds": [
+      "jinja2.utils.LRUCache.__delitem__",
+      "jinja2.utils.LRUCache",
+      "jinja2.utils"
+    ],
+    "retrieved_triples": [
+      [
+        "jinja2.utils",
+        "CONTAINS",
+        "jinja2.utils.LRUCache"
+      ],
+      [
+        "jinja2.utils.LRUCache",
+        "CONTAINS",
+        "jinja2.utils.LRUCache.clear"
+      ],
+      [
+        "jinja2.utils.LRUCache",
+        "CONTAINS",
+        "jinja2.utils.LRUCache.__getnewargs__"
+      ],
+      [
+        "jinja2.utils",
+        "CONTAINS",
+        "jinja2.utils.Namespace"
+      ],
+      [
+        "jinja2.utils.LRUCache",
+        "CONTAINS",
+        "jinja2.utils.LRUCache.__delitem__"
+      ],
+      [
+        "jinja2.utils.LRUCache",
+        "CONTAINS",
+        "jinja2.utils.LRUCache.__iter__"
+      ],
+      [
+        "jinja2.utils.LRUCache",
+        "CONTAINS",
+        "jinja2.utils.LRUCache.__getstate__"
+      ],
+      [
+        "jinja2.utils",
+        "CONTAINS",
+        "jinja2.utils._PassArg"
+      ],
+      [
+        "jinja2.utils.LRUCache",
+        "CONTAINS",
+        "jinja2.utils.LRUCache.__repr__"
+      ],
+      [
+        "jinja2.utils",
+        "CONTAINS",
+        "jinja2.utils._MissingType"
+      ],
+      [
+        "jinja2.utils",
+        "CONTAINS",
+        "jinja2.utils.clear_caches"
+      ],
+      [
+        "jinja2.environment",
+        "IMPORTS",
+        "jinja2.utils"
+      ]
+    ],
+    "latency_s": 0.72,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "What does `requests.sessions.Session` inherit from?",
+    "category": "out_of_scope",
+    "hops": 0,
+    "gold_answer": null,
+    "generated_answer": "flask.sessions.SessionInterface",
+    "seeds": [
+      "flask.sessions.SessionInterface.open_session",
+      "flask.sessions.SessionInterface.save_session",
+      "flask.ctx.AppContext.session"
+    ],
+    "retrieved_triples": [
+      [
+        "flask.ctx.AppContext.session",
+        "CALLS",
+        "flask.ctx.AppContext._get_session"
+      ],
+      [
+        "flask.sessions.SessionInterface",
+        "CONTAINS",
+        "flask.sessions.SessionInterface.save_session"
+      ],
+      [
+        "flask.sessions.SessionInterface",
+        "CONTAINS",
+        "flask.sessions.SessionInterface.open_session"
+      ],
+      [
+        "flask.ctx.AppContext",
+        "CONTAINS",
+        "flask.ctx.AppContext.session"
+      ],
+      [
+        "flask.sessions.SessionInterface",
+        "CONTAINS",
+        "flask.sessions.SessionInterface.make_null_session"
+      ],
+      [
+        "flask.ctx.AppContext._get_session",
+        "CALLS",
+        "flask.sessions.SessionInterface.make_null_session"
+      ],
+      [
+        "flask.sessions.SessionInterface",
+        "CONTAINS",
+        "flask.sessions.SessionInterface.should_set_cookie"
+      ],
+      [
+        "flask.sessions.SessionInterface",
+        "CONTAINS",
+        "flask.sessions.SessionInterface.get_cookie_path"
+      ],
+      [
+        "flask.sessions.SessionInterface",
+        "CONTAINS",
+        "flask.sessions.SessionInterface.get_cookie_name"
+      ],
+      [
+        "flask.sessions.SessionInterface",
+        "CONTAINS",
+        "flask.sessions.SessionInterface.is_null_session"
+      ],
+      [
+        "flask.sessions.SecureCookieSessionInterface",
+        "INHERITS",
+        "flask.sessions.SessionInterface"
+      ],
+      [
+        "flask.ctx.AppContext",
+        "CONTAINS",
+        "flask.ctx.AppContext.request"
+      ]
+    ],
+    "latency_s": 0.56
+  },
+  {
+    "question": "Which module defines the class `werkzeug.sansio.request.Request`?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "werkzeug.sansio.request",
+    "generated_answer": "werkzeug.sansio.request",
+    "seeds": [
+      "werkzeug.sansio.request.Request",
+      "werkzeug.sansio.request.Request._parse_content_type",
+      "werkzeug.sansio.request.Request.mimetype_params"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.sansio.request",
+        "CONTAINS",
+        "werkzeug.sansio.request.Request"
+      ],
+      [
+        "werkzeug.sansio.request.Request",
+        "CONTAINS",
+        "werkzeug.sansio.request.Request.mimetype_params"
+      ],
+      [
+        "werkzeug.sansio.request.Request",
+        "CONTAINS",
+        "werkzeug.sansio.request.Request.pragma"
+      ],
+      [
+        "werkzeug.sansio.request.Request",
+        "CONTAINS",
+        "werkzeug.sansio.request.Request.host_url"
+      ],
+      [
+        "werkzeug.sansio.request",
+        "IMPORTS",
+        "werkzeug.sansio.utils"
+      ],
+      [
+        "werkzeug.sansio.request.Request",
+        "CONTAINS",
+        "werkzeug.sansio.request.Request.content_md5"
+      ],
+      [
+        "werkzeug.sansio.request.Request",
+        "CONTAINS",
+        "werkzeug.sansio.request.Request._parse_content_type"
+      ],
+      [
+        "werkzeug.sansio.request",
+        "IMPORTS",
+        "werkzeug.sansio.http"
+      ],
+      [
+        "werkzeug.sansio.request.Request",
+        "CONTAINS",
+        "werkzeug.sansio.request.Request.is_secure"
+      ],
+      [
+        "werkzeug.sansio.request.Request.mimetype_params",
+        "CALLS",
+        "werkzeug.sansio.request.Request._parse_content_type"
+      ],
+      [
+        "werkzeug.sansio.request.Request",
+        "CONTAINS",
+        "werkzeug.sansio.request.Request.user_agent"
+      ],
+      [
+        "werkzeug.sansio.request",
+        "IMPORTS",
+        "werkzeug.http"
+      ]
+    ],
+    "latency_s": 0.7,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "Which module defines the class `click.types.TupleInfoDict`?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "click.types",
+    "generated_answer": "click.types",
+    "seeds": [
+      "click.types.TupleInfoDict",
+      "click.types.Tuple",
+      "click.types"
+    ],
+    "retrieved_triples": [
+      [
+        "click.types",
+        "CONTAINS",
+        "click.types.TupleInfoDict"
+      ],
+      [
+        "click.types.Tuple",
+        "CONTAINS",
+        "click.types.Tuple.to_info_dict"
+      ],
+      [
+        "click.types.Tuple",
+        "CONTAINS",
+        "click.types.Tuple.__init__"
+      ],
+      [
+        "click.types.TupleInfoDict",
+        "INHERITS",
+        "click.types.ParamTypeInfoDict"
+      ],
+      [
+        "click.types",
+        "CONTAINS",
+        "click.types.ParamTypeInfoDict"
+      ],
+      [
+        "click.types",
+        "CONTAINS",
+        "click.types.FileInfoDict"
+      ],
+      [
+        "click.types.Tuple",
+        "CONTAINS",
+        "click.types.Tuple.name"
+      ],
+      [
+        "click.types",
+        "CONTAINS",
+        "click.types.Tuple"
+      ],
+      [
+        "click.types",
+        "IMPORTS",
+        "click.utils"
+      ],
+      [
+        "click.types",
+        "CONTAINS",
+        "click.types.DateTimeInfoDict"
+      ],
+      [
+        "click.types.Tuple",
+        "CONTAINS",
+        "click.types.Tuple.convert"
+      ],
+      [
+        "click.types.Tuple",
+        "CONTAINS",
+        "click.types.Tuple.arity"
+      ]
+    ],
+    "latency_s": 0.5,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "What function does `flask.sansio.blueprints.Blueprint.add_app_template_test` call?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "flask.sansio.blueprints.Blueprint.record_once",
+    "generated_answer": "flask.sansio.blueprints.Blueprint.record_once",
+    "seeds": [
+      "flask.sansio.blueprints.Blueprint.add_app_template_test",
+      "flask.sansio.blueprints.Blueprint",
+      "flask.sansio.blueprints"
+    ],
+    "retrieved_triples": [
+      [
+        "flask.sansio.blueprints.Blueprint.app_template_test",
+        "CALLS",
+        "flask.sansio.blueprints.Blueprint.add_app_template_test"
+      ],
+      [
+        "flask.sansio.blueprints",
+        "CONTAINS",
+        "flask.sansio.blueprints.Blueprint"
+      ],
+      [
+        "flask.blueprints",
+        "IMPORTS",
+        "flask.sansio.blueprints"
+      ],
+      [
+        "flask.sansio.blueprints.Blueprint",
+        "CONTAINS",
+        "flask.sansio.blueprints.Blueprint.app_template_test"
+      ],
+      [
+        "flask.sansio.app",
+        "IMPORTS",
+        "flask.sansio.blueprints"
+      ],
+      [
+        "flask.sansio.blueprints",
+        "IMPORTS",
+        "flask.sansio.app"
+      ],
+      [
+        "flask.sansio.blueprints.Blueprint",
+        "CONTAINS",
+        "flask.sansio.blueprints.Blueprint.add_app_template_test"
+      ],
+      [
+        "flask.sansio.blueprints.Blueprint",
+        "CONTAINS",
+        "flask.sansio.blueprints.Blueprint.__init__"
+      ],
+      [
+        "flask.sansio.blueprints.Blueprint",
+        "CONTAINS",
+        "flask.sansio.blueprints.Blueprint._check_setup_finished"
+      ],
+      [
+        "flask.sansio.blueprints.Blueprint",
+        "CONTAINS",
+        "flask.sansio.blueprints.Blueprint.app_template_global"
+      ],
+      [
+        "flask.sansio.blueprints",
+        "IMPORTS",
+        "flask.sansio.scaffold"
+      ],
+      [
+        "flask.sansio.blueprints.Blueprint.add_app_template_test",
+        "CALLS",
+        "flask.sansio.blueprints.Blueprint.record_once"
+      ]
+    ],
+    "latency_s": 0.83,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "What does the function `pandas.DataFrame.pivot_table` call?",
+    "category": "out_of_scope",
+    "hops": 0,
+    "gold_answer": null,
+    "generated_answer": "I don't know",
+    "seeds": [],
+    "retrieved_triples": [],
+    "latency_s": 0.18
+  },
+  {
+    "question": "Which package ultimately contains the class `jinja2.idtracking.RootVisitor` (via its module)?",
+    "category": "answerable",
+    "hops": 2,
+    "gold_answer": "jinja2",
+    "generated_answer": "jinja2.idtracking",
+    "seeds": [
+      "jinja2.idtracking.RootVisitor",
+      "jinja2.idtracking.RootVisitor.visit_OverlayScope",
+      "jinja2.idtracking.RootVisitor.visit_AssignBlock"
+    ],
+    "retrieved_triples": [
+      [
+        "jinja2.idtracking.RootVisitor",
+        "CONTAINS",
+        "jinja2.idtracking.RootVisitor.visit_OverlayScope"
+      ],
+      [
+        "jinja2.idtracking.RootVisitor",
+        "CONTAINS",
+        "jinja2.idtracking.RootVisitor.visit_AssignBlock"
+      ],
+      [
+        "jinja2.idtracking.RootVisitor",
+        "CONTAINS",
+        "jinja2.idtracking.RootVisitor.__init__"
+      ],
+      [
+        "jinja2.idtracking.RootVisitor",
+        "CONTAINS",
+        "jinja2.idtracking.RootVisitor.generic_visit"
+      ],
+      [
+        "jinja2.idtracking.RootVisitor",
+        "CONTAINS",
+        "jinja2.idtracking.RootVisitor._simple_visit"
+      ],
+      [
+        "jinja2.idtracking.RootVisitor",
+        "CONTAINS",
+        "jinja2.idtracking.RootVisitor.visit_With"
+      ],
+      [
+        "jinja2.idtracking",
+        "CONTAINS",
+        "jinja2.idtracking.RootVisitor"
+      ],
+      [
+        "jinja2.idtracking.RootVisitor",
+        "CONTAINS",
+        "jinja2.idtracking.RootVisitor.visit_For"
+      ],
+      [
+        "jinja2.idtracking.RootVisitor.visit_OverlayScope",
+        "CALLS",
+        "jinja2.visitor.NodeVisitor.visit"
+      ],
+      [
+        "jinja2.idtracking.RootVisitor.visit_AssignBlock",
+        "CALLS",
+        "jinja2.visitor.NodeVisitor.visit"
+      ],
+      [
+        "jinja2.idtracking.RootVisitor.visit_With",
+        "CALLS",
+        "jinja2.visitor.NodeVisitor.visit"
+      ],
+      [
+        "jinja2.idtracking.RootVisitor.visit_For",
+        "CALLS",
+        "jinja2.visitor.NodeVisitor.visit"
+      ]
+    ],
+    "latency_s": 0.7,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 0.5,
+    "exact_match": true,
+    "f1": 0.6666666666666666
+  },
+  {
+    "question": "Which module defines the function `click.utils._posixify`?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "click.utils",
+    "generated_answer": "I don't know",
+    "seeds": [
+      "click.utils._posixify",
+      "click.utils",
+      "click"
+    ],
+    "retrieved_triples": [
+      [
+        "click",
+        "CONTAINS",
+        "click._utils"
+      ],
+      [
+        "click",
+        "CONTAINS",
+        "click.utils"
+      ],
+      [
+        "click.utils",
+        "IMPORTS",
+        "click._compat"
+      ],
+      [
+        "click.utils",
+        "CONTAINS",
+        "click.utils.open_file"
+      ],
+      [
+        "click.types",
+        "IMPORTS",
+        "click.utils"
+      ],
+      [
+        "click.core",
+        "IMPORTS",
+        "click.utils"
+      ],
+      [
+        "click",
+        "CONTAINS",
+        "click.parser"
+      ],
+      [
+        "click.utils",
+        "IMPORTS",
+        "click.globals"
+      ],
+      [
+        "click",
+        "CONTAINS",
+        "click.testing"
+      ],
+      [
+        "click.testing",
+        "IMPORTS",
+        "click"
+      ],
+      [
+        "click",
+        "CONTAINS",
+        "click.types"
+      ],
+      [
+        "click.core",
+        "IMPORTS",
+        "click._utils"
+      ]
+    ],
+    "latency_s": 0.39,
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "exact_match": false,
+    "f1": 0.0
+  },
+  {
+    "question": "Which package ultimately contains the function `werkzeug.http.is_hop_by_hop_header` (via its module)?",
+    "category": "answerable",
+    "hops": 2,
+    "gold_answer": "werkzeug",
+    "generated_answer": "werkzeug",
+    "seeds": [
+      "werkzeug.http.is_hop_by_hop_header",
+      "werkzeug.http",
+      "werkzeug"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug._header_property",
+        "IMPORTS",
+        "werkzeug.http"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.http"
+      ],
+      [
+        "werkzeug.http",
+        "IMPORTS",
+        "werkzeug"
+      ],
+      [
+        "werkzeug.datastructures.headers",
+        "IMPORTS",
+        "werkzeug.http"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.urls"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.wrappers"
+      ],
+      [
+        "werkzeug.wrappers",
+        "IMPORTS",
+        "werkzeug"
+      ],
+      [
+        "werkzeug.http",
+        "IMPORTS",
+        "werkzeug._internal"
+      ],
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.http"
+      ],
+      [
+        "werkzeug.http.remove_hop_by_hop_headers",
+        "CALLS",
+        "werkzeug.http.is_hop_by_hop_header"
+      ],
+      [
+        "werkzeug.http",
+        "CONTAINS",
+        "werkzeug.http.is_hop_by_hop_header"
+      ]
+    ],
+    "latency_s": 0.39,
+    "retrieval_precision": 0.16666666666666666,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "Which package contains the module `werkzeug.sansio.http`?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "werkzeug",
+    "generated_answer": "werkzeug contains the module `werkzeug.sansio.http`",
+    "seeds": [
+      "werkzeug.sansio.http",
+      "werkzeug.sansio.http._cookie_unslash_replace",
+      "werkzeug.sansio.http.is_resource_modified"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.sansio.request",
+        "IMPORTS",
+        "werkzeug.sansio.http"
+      ],
+      [
+        "werkzeug.sansio.http",
+        "CONTAINS",
+        "werkzeug.sansio.http._cookie_unslash_replace"
+      ],
+      [
+        "werkzeug.sansio.http",
+        "IMPORTS",
+        "werkzeug.http"
+      ],
+      [
+        "werkzeug.sansio.http",
+        "CONTAINS",
+        "werkzeug.sansio.http.is_resource_modified"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.sansio.http"
+      ],
+      [
+        "werkzeug.sansio.http",
+        "IMPORTS",
+        "werkzeug"
+      ],
+      [
+        "werkzeug.sansio.request",
+        "IMPORTS",
+        "werkzeug.sansio.utils"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.sansio.utils"
+      ],
+      [
+        "werkzeug.sansio.utils",
+        "IMPORTS",
+        "werkzeug._internal"
+      ],
+      [
+        "werkzeug.sansio.http",
+        "IMPORTS",
+        "werkzeug._internal"
+      ],
+      [
+        "werkzeug.http",
+        "IMPORTS",
+        "werkzeug.sansio"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.sansio"
+      ]
+    ],
+    "latency_s": 0.69,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 0.25
+  },
+  {
+    "question": "What does `click.astro.StarCommand` inherit from?",
+    "category": "out_of_scope",
+    "hops": 0,
+    "gold_answer": null,
+    "generated_answer": "I don't know",
+    "seeds": [
+      "click"
+    ],
+    "retrieved_triples": [
+      [
+        "click",
+        "CONTAINS",
+        "click._utils"
+      ],
+      [
+        "click",
+        "CONTAINS",
+        "click.globals"
+      ],
+      [
+        "click",
+        "CONTAINS",
+        "click.utils"
+      ],
+      [
+        "click",
+        "CONTAINS",
+        "click.parser"
+      ],
+      [
+        "click",
+        "CONTAINS",
+        "click.core"
+      ],
+      [
+        "click.core",
+        "IMPORTS",
+        "click"
+      ],
+      [
+        "click.decorators",
+        "IMPORTS",
+        "click.globals"
+      ],
+      [
+        "click.decorators",
+        "IMPORTS",
+        "click.utils"
+      ],
+      [
+        "click.core",
+        "IMPORTS",
+        "click.decorators"
+      ],
+      [
+        "click.decorators",
+        "IMPORTS",
+        "click.core"
+      ],
+      [
+        "click.decorators",
+        "CONTAINS",
+        "click.decorators.pass_context"
+      ]
+    ],
+    "latency_s": 0.35
+  },
+  {
+    "question": "What module does `flask.templating` import?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "flask.signals",
+    "generated_answer": "flask.ctx",
+    "seeds": [
+      "flask.templating",
+      "flask.templating.DispatchingJinjaLoader._get_source_explained",
+      "flask.templating.DispatchingJinjaLoader._get_source_fast"
+    ],
+    "retrieved_triples": [
+      [
+        "flask.app",
+        "IMPORTS",
+        "flask.templating"
+      ],
+      [
+        "flask",
+        "CONTAINS",
+        "flask.templating"
+      ],
+      [
+        "flask.templating",
+        "IMPORTS",
+        "flask.ctx"
+      ],
+      [
+        "flask.sansio.scaffold",
+        "IMPORTS",
+        "flask.templating"
+      ],
+      [
+        "flask.templating",
+        "IMPORTS",
+        "flask.sansio.scaffold"
+      ],
+      [
+        "flask.templating.DispatchingJinjaLoader.get_source",
+        "CALLS",
+        "flask.templating.DispatchingJinjaLoader._get_source_fast"
+      ],
+      [
+        "flask.templating.DispatchingJinjaLoader._get_source_fast",
+        "CALLS",
+        "flask.templating.DispatchingJinjaLoader.get_source"
+      ],
+      [
+        "flask.templating",
+        "IMPORTS",
+        "flask.debughelpers"
+      ],
+      [
+        "flask.templating.DispatchingJinjaLoader.get_source",
+        "CALLS",
+        "flask.templating.DispatchingJinjaLoader._get_source_explained"
+      ],
+      [
+        "flask.templating.DispatchingJinjaLoader._get_source_explained",
+        "CALLS",
+        "flask.templating.DispatchingJinjaLoader.get_source"
+      ],
+      [
+        "flask.templating.DispatchingJinjaLoader._get_source_explained",
+        "CALLS",
+        "flask.templating.DispatchingJinjaLoader._iter_loaders"
+      ],
+      [
+        "flask.templating.DispatchingJinjaLoader._get_source_fast",
+        "CALLS",
+        "flask.templating.DispatchingJinjaLoader._iter_loaders"
+      ]
+    ],
+    "latency_s": 0.68,
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "exact_match": false,
+    "f1": 0.5
+  },
+  {
+    "question": "Name a class defined in a module that `werkzeug.formparser` imports.",
+    "category": "answerable",
+    "hops": 2,
+    "gold_answer": "werkzeug.sansio.multipart.File",
+    "generated_answer": "werkzeug.datastructures.file_storage",
+    "seeds": [
+      "werkzeug.formparser",
+      "werkzeug.formparser.MultiPartParser.start_file_streaming",
+      "werkzeug.formparser.FormDataParser.parse_from_environ"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.formparser.FormDataParser",
+        "CONTAINS",
+        "werkzeug.formparser.FormDataParser.parse_from_environ"
+      ],
+      [
+        "werkzeug.formparser",
+        "IMPORTS",
+        "werkzeug._internal"
+      ],
+      [
+        "werkzeug.formparser.MultiPartParser",
+        "CONTAINS",
+        "werkzeug.formparser.MultiPartParser.start_file_streaming"
+      ],
+      [
+        "werkzeug.wrappers.request",
+        "IMPORTS",
+        "werkzeug.formparser"
+      ],
+      [
+        "werkzeug.formparser",
+        "IMPORTS",
+        "werkzeug.sansio.multipart"
+      ],
+      [
+        "werkzeug.formparser",
+        "IMPORTS",
+        "werkzeug.datastructures.headers"
+      ],
+      [
+        "werkzeug.formparser",
+        "IMPORTS",
+        "werkzeug.datastructures.file_storage"
+      ],
+      [
+        "werkzeug.formparser",
+        "CONTAINS",
+        "werkzeug.formparser.MultiPartParser"
+      ],
+      [
+        "werkzeug.formparser.MultiPartParser.parse",
+        "CALLS",
+        "werkzeug.formparser.MultiPartParser.start_file_streaming"
+      ],
+      [
+        "werkzeug.formparser.FormDataParser.parse_from_environ",
+        "CALLS",
+        "werkzeug.formparser.FormDataParser.parse"
+      ],
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "werkzeug._internal"
+      ],
+      [
+        "werkzeug.wrappers.request",
+        "IMPORTS",
+        "werkzeug.utils"
+      ]
+    ],
+    "latency_s": 0.63,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 0.5,
+    "exact_match": false,
+    "f1": 0.5
+  },
+  {
+    "question": "Which module defines the class `flask.templating.Environment`?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "flask.templating",
+    "generated_answer": "flask.templating.Environment --CONTAINS--> flask.templating.Environment.__init__",
+    "seeds": [
+      "flask.templating.Environment",
+      "flask.templating.Environment.__init__",
+      "flask.templating"
+    ],
+    "retrieved_triples": [
+      [
+        "flask.app",
+        "IMPORTS",
+        "flask.templating"
+      ],
+      [
+        "flask.templating",
+        "IMPORTS",
+        "flask.globals"
+      ],
+      [
+        "flask.templating",
+        "IMPORTS",
+        "flask.ctx"
+      ],
+      [
+        "flask.templating.Environment",
+        "CONTAINS",
+        "flask.templating.Environment.__init__"
+      ],
+      [
+        "flask.templating",
+        "IMPORTS",
+        "flask.debughelpers"
+      ],
+      [
+        "flask",
+        "CONTAINS",
+        "flask.templating"
+      ],
+      [
+        "flask.templating",
+        "IMPORTS",
+        "flask.helpers"
+      ],
+      [
+        "flask.cli",
+        "IMPORTS",
+        "flask.app"
+      ],
+      [
+        "flask.cli",
+        "IMPORTS",
+        "flask.globals"
+      ],
+      [
+        "flask",
+        "CONTAINS",
+        "flask.cli"
+      ],
+      [
+        "flask.cli",
+        "IMPORTS",
+        "flask"
+      ],
+      [
+        "flask.cli",
+        "IMPORTS",
+        "flask.helpers"
+      ]
+    ],
+    "latency_s": 0.75,
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "exact_match": true,
+    "f1": 0.4
+  },
+  {
+    "question": "Which module defines the function `jinja2.tests.test_undefined`?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "jinja2.tests",
+    "generated_answer": "jinja2.tests",
+    "seeds": [
+      "jinja2.tests.test_undefined",
+      "jinja2.tests",
+      "jinja2"
+    ],
+    "retrieved_triples": [
+      [
+        "jinja2",
+        "CONTAINS",
+        "jinja2.debug"
+      ],
+      [
+        "jinja2.tests",
+        "CONTAINS",
+        "jinja2.tests.test_undefined"
+      ],
+      [
+        "jinja2",
+        "CONTAINS",
+        "jinja2.utils"
+      ],
+      [
+        "jinja2",
+        "CONTAINS",
+        "jinja2.constants"
+      ],
+      [
+        "jinja2",
+        "CONTAINS",
+        "jinja2.exceptions"
+      ],
+      [
+        "jinja2.tests",
+        "IMPORTS",
+        "jinja2.utils"
+      ],
+      [
+        "jinja2",
+        "CONTAINS",
+        "jinja2.defaults"
+      ],
+      [
+        "jinja2.tests",
+        "CONTAINS",
+        "jinja2.tests.test_defined"
+      ],
+      [
+        "jinja2.tests",
+        "IMPORTS",
+        "jinja2.runtime"
+      ],
+      [
+        "jinja2",
+        "CONTAINS",
+        "jinja2.async_utils"
+      ],
+      [
+        "jinja2.tests",
+        "CONTAINS",
+        "jinja2.tests.test_test"
+      ],
+      [
+        "jinja2.tests",
+        "CONTAINS",
+        "jinja2.tests.test_boolean"
+      ]
+    ],
+    "latency_s": 0.46,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "Which package contains the module `werkzeug.debug.console`?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "werkzeug",
+    "generated_answer": "werkzeug.debug.console",
+    "seeds": [
+      "werkzeug.debug.console",
+      "werkzeug.debug.console._InteractiveConsole.showsyntaxerror",
+      "werkzeug.debug.console._ConsoleLoader.get_source_by_code"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.debug.console",
+        "CONTAINS",
+        "werkzeug.debug.console.Console"
+      ],
+      [
+        "werkzeug.debug.console",
+        "CONTAINS",
+        "werkzeug.debug.console._InteractiveConsole"
+      ],
+      [
+        "werkzeug.debug.console",
+        "IMPORTS",
+        "werkzeug.debug.tbtools"
+      ],
+      [
+        "werkzeug.debug.tbtools",
+        "IMPORTS",
+        "werkzeug.debug.console"
+      ],
+      [
+        "werkzeug.debug.console",
+        "IMPORTS",
+        "werkzeug.debug.repr"
+      ],
+      [
+        "werkzeug.debug.console",
+        "CONTAINS",
+        "werkzeug.debug.console._ConsoleLoader"
+      ],
+      [
+        "werkzeug.debug.console._InteractiveConsole",
+        "CONTAINS",
+        "werkzeug.debug.console._InteractiveConsole.showsyntaxerror"
+      ],
+      [
+        "werkzeug.debug.console._ConsoleLoader",
+        "CONTAINS",
+        "werkzeug.debug.console._ConsoleLoader.get_source_by_code"
+      ],
+      [
+        "werkzeug.debug.console._InteractiveConsole.showsyntaxerror",
+        "CALLS",
+        "werkzeug.debug.console.HTMLStringO._write"
+      ],
+      [
+        "werkzeug.debug.console._InteractiveConsole",
+        "CONTAINS",
+        "werkzeug.debug.console._InteractiveConsole.runsource"
+      ],
+      [
+        "werkzeug.debug.console._ConsoleLoader",
+        "CONTAINS",
+        "werkzeug.debug.console._ConsoleLoader.__init__"
+      ],
+      [
+        "werkzeug.debug.console._InteractiveConsole",
+        "CONTAINS",
+        "werkzeug.debug.console._InteractiveConsole.runcode"
+      ]
+    ],
+    "latency_s": 0.59,
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "exact_match": true,
+    "f1": 0.5
+  },
+  {
+    "question": "Which package ultimately contains the function `werkzeug.urls.uri_to_iri` (via its module)?",
+    "category": "answerable",
+    "hops": 2,
+    "gold_answer": "werkzeug",
+    "generated_answer": "werkzeug",
+    "seeds": [
+      "werkzeug.urls.uri_to_iri",
+      "werkzeug.urls",
+      "werkzeug"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.urls"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.sansio.http"
+      ],
+      [
+        "werkzeug.sansio.http",
+        "IMPORTS",
+        "werkzeug"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.http"
+      ],
+      [
+        "werkzeug.http",
+        "IMPORTS",
+        "werkzeug"
+      ],
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.urls"
+      ],
+      [
+        "werkzeug.sansio.utils",
+        "IMPORTS",
+        "werkzeug.urls"
+      ],
+      [
+        "werkzeug.test",
+        "IMPORTS",
+        "werkzeug.urls"
+      ],
+      [
+        "werkzeug.routing.map",
+        "IMPORTS",
+        "werkzeug.urls"
+      ],
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "werkzeug.wrappers.response"
+      ],
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.utils"
+      ]
+    ],
+    "latency_s": 0.43,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 0.5,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "Which package contains the module `flask.signals`?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "flask",
+    "generated_answer": "flask",
+    "seeds": [
+      "flask.signals",
+      "flask"
+    ],
+    "retrieved_triples": [
+      [
+        "flask",
+        "CONTAINS",
+        "flask.signals"
+      ],
+      [
+        "flask.app",
+        "IMPORTS",
+        "flask.signals"
+      ],
+      [
+        "flask",
+        "CONTAINS",
+        "flask.app"
+      ],
+      [
+        "flask.app",
+        "IMPORTS",
+        "flask"
+      ],
+      [
+        "flask",
+        "CONTAINS",
+        "flask.cli"
+      ],
+      [
+        "flask.cli",
+        "IMPORTS",
+        "flask"
+      ],
+      [
+        "flask.ctx",
+        "IMPORTS",
+        "flask.signals"
+      ],
+      [
+        "flask",
+        "CONTAINS",
+        "flask.sansio.app"
+      ],
+      [
+        "flask.helpers",
+        "IMPORTS",
+        "flask.signals"
+      ],
+      [
+        "flask.templating",
+        "IMPORTS",
+        "flask.signals"
+      ],
+      [
+        "flask.cli",
+        "IMPORTS",
+        "flask.app"
+      ],
+      [
+        "flask.cli",
+        "IMPORTS",
+        "flask.helpers"
+      ]
+    ],
+    "latency_s": 0.36,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "What module does `werkzeug.wrappers.response` import?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "werkzeug.wsgi",
+    "generated_answer": "werkzeug.utils",
+    "seeds": [
+      "werkzeug.wrappers.response",
+      "werkzeug.wrappers.response.Response._is_range_request_processable",
+      "werkzeug.wrappers.response.Response.calculate_content_length"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.wrappers.request"
+      ],
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "werkzeug.wrappers.response"
+      ],
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug.wrappers.response.Response",
+        "CONTAINS",
+        "werkzeug.wrappers.response.Response.calculate_content_length"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.wrappers.response"
+      ],
+      [
+        "werkzeug.test",
+        "IMPORTS",
+        "werkzeug.wrappers.response"
+      ],
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.test"
+      ],
+      [
+        "werkzeug.wrappers.response.Response.calculate_content_length",
+        "CALLS",
+        "werkzeug.wrappers.response.Response.iter_encoded"
+      ],
+      [
+        "werkzeug.wrappers.response.Response.calculate_content_length",
+        "CALLS",
+        "werkzeug.wrappers.response.Response._ensure_sequence"
+      ],
+      [
+        "werkzeug.wrappers.response.Response",
+        "CONTAINS",
+        "werkzeug.wrappers.response.Response.__repr__"
+      ],
+      [
+        "werkzeug.wrappers.response.Response.__repr__",
+        "CALLS",
+        "werkzeug.wrappers.response.Response.iter_encoded"
+      ],
+      [
+        "werkzeug.wrappers.response.Response",
+        "CONTAINS",
+        "werkzeug.wrappers.response.Response._is_range_request_processable"
+      ]
+    ],
+    "latency_s": 0.43,
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "exact_match": false,
+    "f1": 0.5
+  },
+  {
+    "question": "What does `itsdangerous.timetravel.Paradox` inherit from?",
+    "category": "out_of_scope",
+    "hops": 0,
+    "gold_answer": null,
+    "generated_answer": "I don't know",
+    "seeds": [
+      "itsdangerous"
+    ],
+    "retrieved_triples": [
+      [
+        "itsdangerous",
+        "CONTAINS",
+        "itsdangerous.timed"
+      ],
+      [
+        "itsdangerous",
+        "CONTAINS",
+        "itsdangerous.exc"
+      ],
+      [
+        "itsdangerous",
+        "CONTAINS",
+        "itsdangerous.encoding"
+      ],
+      [
+        "itsdangerous",
+        "CONTAINS",
+        "itsdangerous.url_safe"
+      ],
+      [
+        "itsdangerous",
+        "CONTAINS",
+        "itsdangerous.serializer"
+      ],
+      [
+        "itsdangerous",
+        "CONTAINS",
+        "itsdangerous._json"
+      ],
+      [
+        "itsdangerous.timed",
+        "CONTAINS",
+        "itsdangerous.timed.TimedSerializer"
+      ],
+      [
+        "itsdangerous.exc",
+        "CONTAINS",
+        "itsdangerous.exc.BadTimeSignature"
+      ],
+      [
+        "itsdangerous.exc",
+        "CONTAINS",
+        "itsdangerous.exc.BadData"
+      ],
+      [
+        "itsdangerous.timed",
+        "CONTAINS",
+        "itsdangerous.timed.TimestampSigner"
+      ],
+      [
+        "itsdangerous.exc",
+        "CONTAINS",
+        "itsdangerous.exc.SignatureExpired"
+      ],
+      [
+        "itsdangerous.url_safe",
+        "CONTAINS",
+        "itsdangerous.url_safe.URLSafeTimedSerializer"
+      ]
+    ],
+    "latency_s": 0.53
+  },
+  {
+    "question": "What function does `jinja2.environment.Environment.compile` call?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "jinja2.environment.Environment._generate",
+    "generated_answer": "jinja2.environment.Environment._compile",
+    "seeds": [
+      "jinja2.environment.Environment.compile",
+      "jinja2.environment.Environment.compile_expression",
+      "jinja2.environment.Environment.compile_templates"
+    ],
+    "retrieved_triples": [
+      [
+        "jinja2.environment.Environment.compile",
+        "CALLS",
+        "jinja2.environment.Environment._compile"
+      ],
+      [
+        "jinja2.environment.Environment",
+        "CONTAINS",
+        "jinja2.environment.Environment.compile_expression"
+      ],
+      [
+        "jinja2.environment.Environment",
+        "CONTAINS",
+        "jinja2.environment.Environment.compile"
+      ],
+      [
+        "jinja2.environment.Environment.compile_expression",
+        "CALLS",
+        "jinja2.environment.TemplateExpression"
+      ],
+      [
+        "jinja2.environment.Environment",
+        "CONTAINS",
+        "jinja2.environment.Environment.compile_templates"
+      ],
+      [
+        "jinja2.environment.Environment.compile",
+        "CALLS",
+        "jinja2.environment.Environment._generate"
+      ],
+      [
+        "jinja2.environment.Environment.compile",
+        "CALLS",
+        "jinja2.environment.Environment._parse"
+      ],
+      [
+        "jinja2.environment.Environment.compile_templates",
+        "CALLS",
+        "jinja2.environment.Environment.list_templates"
+      ],
+      [
+        "jinja2.environment.Environment.compile",
+        "CALLS",
+        "jinja2.environment.Environment.handle_exception"
+      ],
+      [
+        "jinja2.environment.Environment.compile_expression",
+        "CALLS",
+        "jinja2.environment.Template"
+      ],
+      [
+        "jinja2.environment.Environment.compile_expression",
+        "CALLS",
+        "jinja2.environment.Environment.from_string"
+      ],
+      [
+        "jinja2.environment.Environment.compile_expression",
+        "CALLS",
+        "jinja2.environment.Environment.handle_exception"
+      ]
+    ],
+    "latency_s": 0.66,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": false,
+    "f1": 0.75
+  },
+  {
+    "question": "What function does `jinja2.parser.Parser.parse_compare` call?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "jinja2.lexer.TokenStream.look",
+    "generated_answer": "jinja2.parser.Parser.parse_math1",
+    "seeds": [
+      "jinja2.parser.Parser.parse_compare",
+      "jinja2.parser.Parser.parse",
+      "jinja2.parser.Parser"
+    ],
+    "retrieved_triples": [
+      [
+        "jinja2.parser.Parser.parse_not",
+        "CALLS",
+        "jinja2.parser.Parser.parse_compare"
+      ],
+      [
+        "jinja2.parser.Parser",
+        "CONTAINS",
+        "jinja2.parser.Parser.parse_compare"
+      ],
+      [
+        "jinja2.parser.Parser.parse_compare",
+        "CALLS",
+        "jinja2.parser.Parser.parse_math1"
+      ],
+      [
+        "jinja2.parser.Parser",
+        "CONTAINS",
+        "jinja2.parser.Parser.parse_if"
+      ],
+      [
+        "jinja2.parser.Parser.parse",
+        "CALLS",
+        "jinja2.parser.Parser.subparse"
+      ],
+      [
+        "jinja2.parser.Parser",
+        "CONTAINS",
+        "jinja2.parser.Parser.parse_or"
+      ],
+      [
+        "jinja2.environment.Environment._parse",
+        "CALLS",
+        "jinja2.parser.Parser"
+      ],
+      [
+        "jinja2.parser.Parser",
+        "CONTAINS",
+        "jinja2.parser.Parser.parse_statements"
+      ],
+      [
+        "jinja2.parser.Parser",
+        "CONTAINS",
+        "jinja2.parser.Parser.parse_not"
+      ],
+      [
+        "jinja2.parser.Parser.parse_tuple",
+        "CALLS",
+        "jinja2.parser.Parser.parse"
+      ],
+      [
+        "jinja2.parser.Parser",
+        "CONTAINS",
+        "jinja2.parser.Parser.parse"
+      ],
+      [
+        "jinja2.parser.Parser.parse_or",
+        "CALLS",
+        "jinja2.lexer.TokenStream.skip_if"
+      ]
+    ],
+    "latency_s": 0.67,
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "exact_match": false,
+    "f1": 0.22222222222222224
+  },
+  {
+    "question": "What module does `click.core` import?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "click.exceptions",
+    "generated_answer": "click.utils",
+    "seeds": [
+      "click.core",
+      "click.core._FakeSubclassCheck.__subclasscheck__",
+      "click.core._FakeSubclassCheck.__instancecheck__"
+    ],
+    "retrieved_triples": [
+      [
+        "click.core",
+        "IMPORTS",
+        "click.utils"
+      ],
+      [
+        "click.types",
+        "IMPORTS",
+        "click.core"
+      ],
+      [
+        "click.core",
+        "IMPORTS",
+        "click.globals"
+      ],
+      [
+        "click.globals",
+        "IMPORTS",
+        "click.core"
+      ],
+      [
+        "click.core",
+        "IMPORTS",
+        "click._utils"
+      ],
+      [
+        "click.core",
+        "IMPORTS",
+        "click.parser"
+      ],
+      [
+        "click.core",
+        "CONTAINS",
+        "click.core._FakeSubclassCheck"
+      ],
+      [
+        "click.utils",
+        "IMPORTS",
+        "click._compat"
+      ],
+      [
+        "click.types",
+        "IMPORTS",
+        "click._compat"
+      ],
+      [
+        "click.core._FakeSubclassCheck",
+        "CONTAINS",
+        "click.core._FakeSubclassCheck.__instancecheck__"
+      ],
+      [
+        "click.core._FakeSubclassCheck",
+        "CONTAINS",
+        "click.core._FakeSubclassCheck.__subclasscheck__"
+      ],
+      [
+        "click._termui_impl",
+        "IMPORTS",
+        "click.utils"
+      ]
+    ],
+    "latency_s": 0.43,
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "exact_match": false,
+    "f1": 0.5
+  },
+  {
+    "question": "Which package contains the module `werkzeug.routing.converters`?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "werkzeug",
+    "generated_answer": "werkzeug",
+    "seeds": [
+      "werkzeug.routing.converters",
+      "werkzeug.routing.converters.BaseConverter.__init_subclass__",
+      "werkzeug.routing.converters.IntegerConverter.to_python"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.routing.converters",
+        "IMPORTS",
+        "werkzeug.routing.map"
+      ],
+      [
+        "werkzeug.routing.map",
+        "IMPORTS",
+        "werkzeug.routing.converters"
+      ],
+      [
+        "werkzeug.routing.matcher",
+        "IMPORTS",
+        "werkzeug.routing.converters"
+      ],
+      [
+        "werkzeug.routing.rules",
+        "IMPORTS",
+        "werkzeug.routing.converters"
+      ],
+      [
+        "werkzeug.routing.converters.BaseConverter",
+        "CONTAINS",
+        "werkzeug.routing.converters.BaseConverter.__init_subclass__"
+      ],
+      [
+        "werkzeug.routing.converters",
+        "CONTAINS",
+        "werkzeug.routing.converters.FloatConverter"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.routing.converters"
+      ],
+      [
+        "werkzeug.routing.converters.IntegerConverter.to_python",
+        "CALLS",
+        "werkzeug.routing.converters.ValidationError"
+      ],
+      [
+        "werkzeug.routing.converters.IntegerConverter",
+        "CONTAINS",
+        "werkzeug.routing.converters.IntegerConverter.to_python"
+      ],
+      [
+        "werkzeug.routing.exceptions",
+        "IMPORTS",
+        "werkzeug.routing.map"
+      ],
+      [
+        "werkzeug.routing.map",
+        "IMPORTS",
+        "werkzeug.routing.exceptions"
+      ],
+      [
+        "werkzeug.routing.matcher",
+        "IMPORTS",
+        "werkzeug.routing.exceptions"
+      ]
+    ],
+    "latency_s": 0.49,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "Name a class defined in a module that `werkzeug.wrappers.request` imports.",
+    "category": "answerable",
+    "hops": 2,
+    "gold_answer": "werkzeug.datastructures.structures.CallbackDict",
+    "generated_answer": "werkzeug.wrappers.request",
+    "seeds": [
+      "werkzeug.wrappers.request",
+      "werkzeug.wrappers.request.Request._private_get_stream_for_parsing",
+      "werkzeug.wrappers.request.Request._private_make_form_data_parser"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.wrappers.request"
+      ],
+      [
+        "werkzeug.wrappers.request",
+        "IMPORTS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug._internal",
+        "IMPORTS",
+        "werkzeug.wrappers.request"
+      ],
+      [
+        "werkzeug.wrappers.request",
+        "IMPORTS",
+        "werkzeug._internal"
+      ],
+      [
+        "werkzeug.test",
+        "IMPORTS",
+        "werkzeug.wrappers.request"
+      ],
+      [
+        "werkzeug.wrappers.request",
+        "IMPORTS",
+        "werkzeug.test"
+      ],
+      [
+        "werkzeug.wrappers.request.Request.make_form_data_parser",
+        "CALLS",
+        "werkzeug.wrappers.request.Request._private_make_form_data_parser"
+      ],
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "werkzeug.wrappers"
+      ],
+      [
+        "werkzeug.wrappers.request.Request._get_stream_for_parsing",
+        "CALLS",
+        "werkzeug.wrappers.request.Request._private_get_stream_for_parsing"
+      ],
+      [
+        "werkzeug.wrappers.request.Request",
+        "CONTAINS",
+        "werkzeug.wrappers.request.Request._private_get_stream_for_parsing"
+      ],
+      [
+        "werkzeug.wrappers.request.Request._parse_form_data",
+        "CALLS",
+        "werkzeug.wrappers.request.Request._private_make_form_data_parser"
+      ],
+      [
+        "werkzeug.utils",
+        "CONTAINS",
+        "werkzeug.utils.ImportStringError"
+      ]
+    ],
+    "latency_s": 0.61,
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "exact_match": false,
+    "f1": 0.28571428571428575
+  },
+  {
+    "question": "What does `markupsafe.holograms.Renderer` inherit from?",
+    "category": "out_of_scope",
+    "hops": 0,
+    "gold_answer": null,
+    "generated_answer": "I don't know",
+    "seeds": [
+      "markupsafe"
+    ],
+    "retrieved_triples": [
+      [
+        "markupsafe",
+        "CONTAINS",
+        "markupsafe._MarkupEscapeHelper"
+      ],
+      [
+        "markupsafe",
+        "CONTAINS",
+        "markupsafe._native"
+      ],
+      [
+        "markupsafe",
+        "CONTAINS",
+        "markupsafe._HasHTML"
+      ],
+      [
+        "markupsafe",
+        "CONTAINS",
+        "markupsafe.EscapeFormatter"
+      ],
+      [
+        "markupsafe",
+        "CONTAINS",
+        "markupsafe.Markup"
+      ],
+      [
+        "markupsafe",
+        "CONTAINS",
+        "markupsafe.escape_silent"
+      ],
+      [
+        "markupsafe.Markup",
+        "CONTAINS",
+        "markupsafe.Markup.__repr__"
+      ],
+      [
+        "markupsafe._MarkupEscapeHelper",
+        "CONTAINS",
+        "markupsafe._MarkupEscapeHelper.__repr__"
+      ],
+      [
+        "markupsafe._MarkupEscapeHelper",
+        "CONTAINS",
+        "markupsafe._MarkupEscapeHelper.__str__"
+      ],
+      [
+        "markupsafe._MarkupEscapeHelper",
+        "CONTAINS",
+        "markupsafe._MarkupEscapeHelper.__float__"
+      ],
+      [
+        "markupsafe.Markup",
+        "CONTAINS",
+        "markupsafe.Markup.upper"
+      ],
+      [
+        "markupsafe._MarkupEscapeHelper",
+        "CONTAINS",
+        "markupsafe._MarkupEscapeHelper.__int__"
+      ]
+    ],
+    "latency_s": 0.59
+  },
+  {
+    "question": "Which package ultimately contains the function `werkzeug.http.is_entity_header` (via its module)?",
+    "category": "answerable",
+    "hops": 2,
+    "gold_answer": "werkzeug",
+    "generated_answer": "werkzeug",
+    "seeds": [
+      "werkzeug.http.is_entity_header",
+      "werkzeug.http",
+      "werkzeug"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug._header_property",
+        "IMPORTS",
+        "werkzeug.http"
+      ],
+      [
+        "werkzeug.datastructures.headers",
+        "IMPORTS",
+        "werkzeug.http"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.http"
+      ],
+      [
+        "werkzeug.http",
+        "IMPORTS",
+        "werkzeug"
+      ],
+      [
+        "werkzeug.http",
+        "IMPORTS",
+        "werkzeug._internal"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.wrappers.response"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.wrappers.request"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.debug"
+      ],
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.http"
+      ],
+      [
+        "werkzeug.http.remove_entity_headers",
+        "CALLS",
+        "werkzeug.http.is_entity_header"
+      ],
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "werkzeug._header_property"
+      ]
+    ],
+    "latency_s": 0.43,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 0.5,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "Which module defines the function `werkzeug.routing.rules.parse_converter_args`?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "werkzeug.routing.rules",
+    "generated_answer": "werkzeug.routing.rules",
+    "seeds": [
+      "werkzeug.routing.rules.parse_converter_args",
+      "werkzeug.routing.rules",
+      "werkzeug.routing"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.routing.rules",
+        "IMPORTS",
+        "werkzeug.routing.converters"
+      ],
+      [
+        "werkzeug.routing.rules.Rule._parse_rule",
+        "CALLS",
+        "werkzeug.routing.rules.parse_converter_args"
+      ],
+      [
+        "werkzeug.routing.matcher",
+        "IMPORTS",
+        "werkzeug.routing.rules"
+      ],
+      [
+        "werkzeug.routing.exceptions",
+        "IMPORTS",
+        "werkzeug.routing.rules"
+      ],
+      [
+        "werkzeug.routing.map",
+        "IMPORTS",
+        "werkzeug.routing.rules"
+      ],
+      [
+        "werkzeug.routing.rules",
+        "IMPORTS",
+        "werkzeug.routing.map"
+      ],
+      [
+        "werkzeug.routing.rules.parse_converter_args",
+        "CALLS",
+        "werkzeug.routing.rules._pythonize"
+      ],
+      [
+        "werkzeug.routing.rules",
+        "CONTAINS",
+        "werkzeug.routing.rules.Rule"
+      ],
+      [
+        "werkzeug.routing.rules.Rule._parse_rule",
+        "CALLS",
+        "werkzeug.routing.rules.Rule.get_converter"
+      ],
+      [
+        "werkzeug.routing.map",
+        "IMPORTS",
+        "werkzeug.routing"
+      ],
+      [
+        "werkzeug.routing.rules",
+        "CONTAINS",
+        "werkzeug.routing.rules.parse_converter_args"
+      ],
+      [
+        "werkzeug.routing.rules.Rule.__repr__",
+        "CALLS",
+        "werkzeug.datastructures.mixins._ImmutableListMixin.append"
+      ]
+    ],
+    "latency_s": 0.56,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "Name a class defined in a module that `werkzeug.wrappers.response` imports.",
+    "category": "answerable",
+    "hops": 2,
+    "gold_answer": "werkzeug.exceptions.NotAcceptable",
+    "generated_answer": "werkzeug.wrappers.response.Response",
+    "seeds": [
+      "werkzeug.wrappers.response",
+      "werkzeug.wrappers.response.Response._is_range_request_processable",
+      "werkzeug.wrappers.response.Response.calculate_content_length"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.wrappers.request"
+      ],
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "werkzeug.wrappers.response"
+      ],
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug._internal"
+      ],
+      [
+        "werkzeug.test",
+        "IMPORTS",
+        "werkzeug.wrappers.response"
+      ],
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.test"
+      ],
+      [
+        "werkzeug.wrappers.response.Response",
+        "CONTAINS",
+        "werkzeug.wrappers.response.Response.calculate_content_length"
+      ],
+      [
+        "werkzeug.wrappers.response.Response.calculate_content_length",
+        "CALLS",
+        "werkzeug.wrappers.response.Response.iter_encoded"
+      ],
+      [
+        "werkzeug.wrappers.response.Response.calculate_content_length",
+        "CALLS",
+        "werkzeug.wrappers.response.Response._ensure_sequence"
+      ],
+      [
+        "werkzeug.wrappers.response.Response",
+        "CONTAINS",
+        "werkzeug.wrappers.response.Response.__repr__"
+      ],
+      [
+        "werkzeug.wrappers.response.Response.__repr__",
+        "CALLS",
+        "werkzeug.wrappers.response.Response.iter_encoded"
+      ],
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "werkzeug.wrappers"
+      ]
+    ],
+    "latency_s": 0.6,
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "exact_match": false,
+    "f1": 0.28571428571428575
+  },
+  {
+    "question": "Name a class defined in a module that `werkzeug.sansio.response` imports.",
+    "category": "answerable",
+    "hops": 2,
+    "gold_answer": "werkzeug.datastructures.structures._ImmutableDict",
+    "generated_answer": "werkzeug.sansio.response.Response",
+    "seeds": [
+      "werkzeug.sansio.response",
+      "werkzeug.sansio.response.Response._set_www_authenticate",
+      "werkzeug.sansio.response.Response.mimetype_params"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.sansio.response",
+        "IMPORTS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug.sansio.response",
+        "CONTAINS",
+        "werkzeug.sansio.response.Response"
+      ],
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.sansio.response"
+      ],
+      [
+        "werkzeug.sansio.response.Response",
+        "CONTAINS",
+        "werkzeug.sansio.response.Response._set_www_authenticate"
+      ],
+      [
+        "werkzeug.sansio.response",
+        "IMPORTS",
+        "werkzeug.http"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.sansio.response"
+      ],
+      [
+        "werkzeug._header_property",
+        "IMPORTS",
+        "werkzeug.sansio.response"
+      ],
+      [
+        "werkzeug.http",
+        "IMPORTS",
+        "werkzeug.sansio"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.sansio"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.sansio.utils"
+      ],
+      [
+        "werkzeug.sansio.response.Response",
+        "CONTAINS",
+        "werkzeug.sansio.response.Response.__repr__"
+      ],
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "werkzeug._internal"
+      ]
+    ],
+    "latency_s": 0.64,
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "exact_match": false,
+    "f1": 0.25
+  },
+  {
+    "question": "Which module defines the function `werkzeug._reloader._find_stat_paths`?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "werkzeug._reloader",
+    "generated_answer": "werkzeug._reloader",
+    "seeds": [
+      "werkzeug._reloader._find_stat_paths",
+      "werkzeug._reloader",
+      "werkzeug"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug._reloader"
+      ],
+      [
+        "werkzeug._reloader._find_stat_paths",
+        "CALLS",
+        "werkzeug._reloader._iter_module_paths"
+      ],
+      [
+        "werkzeug._reloader.StatReloaderLoop.run_step",
+        "CALLS",
+        "werkzeug._reloader._find_stat_paths"
+      ],
+      [
+        "werkzeug._reloader",
+        "CONTAINS",
+        "werkzeug._reloader._find_stat_paths"
+      ],
+      [
+        "werkzeug._reloader._find_stat_paths",
+        "CALLS",
+        "werkzeug._reloader._remove_by_pattern"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug._reloader",
+        "CONTAINS",
+        "werkzeug._reloader.StatReloaderLoop"
+      ],
+      [
+        "werkzeug._reloader",
+        "IMPORTS",
+        "werkzeug._internal"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.urls"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.debug"
+      ],
+      [
+        "werkzeug.debug",
+        "IMPORTS",
+        "werkzeug"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug._internal"
+      ]
+    ],
+    "latency_s": 0.58,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "What class does `werkzeug.sansio.multipart.Field` inherit from?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "werkzeug.sansio.multipart.Event",
+    "generated_answer": "werkzeug.sansio.multipart.Event",
+    "seeds": [
+      "werkzeug.sansio.multipart.Field",
+      "werkzeug.sansio.multipart",
+      "werkzeug.sansio"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.sansio.multipart.Field",
+        "INHERITS",
+        "werkzeug.sansio.multipart.Event"
+      ],
+      [
+        "werkzeug.sansio.multipart",
+        "CONTAINS",
+        "werkzeug.sansio.multipart.State"
+      ],
+      [
+        "werkzeug.sansio.multipart",
+        "CONTAINS",
+        "werkzeug.sansio.multipart.Field"
+      ],
+      [
+        "werkzeug.sansio.multipart",
+        "CONTAINS",
+        "werkzeug.sansio.multipart.Preamble"
+      ],
+      [
+        "werkzeug.sansio.multipart",
+        "CONTAINS",
+        "werkzeug.sansio.multipart.NeedData"
+      ],
+      [
+        "werkzeug.sansio.multipart",
+        "CONTAINS",
+        "werkzeug.sansio.multipart.Epilogue"
+      ],
+      [
+        "werkzeug.sansio.multipart",
+        "CONTAINS",
+        "werkzeug.sansio.multipart.Event"
+      ],
+      [
+        "werkzeug.sansio.multipart.Preamble",
+        "INHERITS",
+        "werkzeug.sansio.multipart.Event"
+      ],
+      [
+        "werkzeug.sansio.multipart.MultipartDecoder.next_event",
+        "CALLS",
+        "werkzeug.sansio.multipart.Preamble"
+      ],
+      [
+        "werkzeug.test.stream_encode_multipart",
+        "CALLS",
+        "werkzeug.sansio.multipart.Preamble"
+      ],
+      [
+        "werkzeug.sansio.multipart.File",
+        "INHERITS",
+        "werkzeug.sansio.multipart.Event"
+      ],
+      [
+        "werkzeug.sansio.multipart",
+        "CONTAINS",
+        "werkzeug.sansio.multipart.File"
+      ]
+    ],
+    "latency_s": 0.72,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "What class does `click.shell_completion.PowerShellComplete` inherit from?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "click.shell_completion.ShellComplete",
+    "generated_answer": "click.shell_completion.ShellComplete",
+    "seeds": [
+      "click.shell_completion.PowerShellComplete",
+      "click.shell_completion.PowerShellComplete.get_completion_args",
+      "click.shell_completion.PowerShellComplete.format_completion"
+    ],
+    "retrieved_triples": [
+      [
+        "click.shell_completion.PowerShellComplete",
+        "CONTAINS",
+        "click.shell_completion.PowerShellComplete.get_completion_args"
+      ],
+      [
+        "click.shell_completion.PowerShellComplete",
+        "CONTAINS",
+        "click.shell_completion.PowerShellComplete.format_completion"
+      ],
+      [
+        "click.shell_completion.PowerShellComplete",
+        "INHERITS",
+        "click.shell_completion.ShellComplete"
+      ],
+      [
+        "click.shell_completion",
+        "CONTAINS",
+        "click.shell_completion.PowerShellComplete"
+      ],
+      [
+        "click.shell_completion.BashComplete",
+        "INHERITS",
+        "click.shell_completion.ShellComplete"
+      ],
+      [
+        "click.shell_completion",
+        "CONTAINS",
+        "click.shell_completion.BashComplete"
+      ],
+      [
+        "click.shell_completion",
+        "CONTAINS",
+        "click.shell_completion.add_completion_class"
+      ],
+      [
+        "click.shell_completion.ZshComplete",
+        "INHERITS",
+        "click.shell_completion.ShellComplete"
+      ],
+      [
+        "click.shell_completion",
+        "CONTAINS",
+        "click.shell_completion.ZshComplete"
+      ],
+      [
+        "click.shell_completion",
+        "CONTAINS",
+        "click.shell_completion._SourceVarsDict"
+      ],
+      [
+        "click.shell_completion.ZshComplete.get_completion_args",
+        "CALLS",
+        "click.shell_completion.split_arg_string"
+      ],
+      [
+        "click.shell_completion.PowerShellComplete.get_completion_args",
+        "CALLS",
+        "click.shell_completion.split_arg_string"
+      ]
+    ],
+    "latency_s": 0.64,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "What function does `jinja2.environment.Template.__new__` call?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "jinja2.environment.get_spontaneous_environment",
+    "generated_answer": "jinja2.environment.get_spontaneous_environment",
+    "seeds": [
+      "jinja2.environment.Template.__new__",
+      "jinja2.environment.Template",
+      "jinja2.environment"
+    ],
+    "retrieved_triples": [
+      [
+        "jinja2.environment.Template",
+        "CONTAINS",
+        "jinja2.environment.Template.from_code"
+      ],
+      [
+        "jinja2.environment.Template._from_namespace",
+        "CALLS",
+        "jinja2.environment.Template.__new__"
+      ],
+      [
+        "jinja2.environment",
+        "CONTAINS",
+        "jinja2.environment.Template"
+      ],
+      [
+        "jinja2.environment.Template",
+        "CONTAINS",
+        "jinja2.environment.Template.__repr__"
+      ],
+      [
+        "jinja2.environment.Template.__new__",
+        "CALLS",
+        "jinja2.environment.get_spontaneous_environment"
+      ],
+      [
+        "jinja2.environment.Template",
+        "CONTAINS",
+        "jinja2.environment.Template._get_default_module"
+      ],
+      [
+        "jinja2.environment",
+        "IMPORTS",
+        "jinja2.utils"
+      ],
+      [
+        "jinja2.utils",
+        "IMPORTS",
+        "jinja2.environment"
+      ],
+      [
+        "jinja2.environment.Template",
+        "CONTAINS",
+        "jinja2.environment.Template.module"
+      ],
+      [
+        "jinja2.environment",
+        "IMPORTS",
+        "jinja2.runtime"
+      ],
+      [
+        "jinja2.runtime",
+        "IMPORTS",
+        "jinja2.environment"
+      ],
+      [
+        "jinja2.environment.Template",
+        "CONTAINS",
+        "jinja2.environment.Template._from_namespace"
+      ]
+    ],
+    "latency_s": 0.71,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "Which module defines the class `werkzeug.datastructures.structures._TypeConversionDict`?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "werkzeug.datastructures.structures",
+    "generated_answer": "werkzeug.datastructures.structures",
+    "seeds": [
+      "werkzeug.datastructures.structures._TypeConversionDict",
+      "werkzeug.datastructures.structures._TypeConversionDict.get",
+      "werkzeug.datastructures.structures"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.datastructures.structures",
+        "IMPORTS",
+        "werkzeug.datastructures.set"
+      ],
+      [
+        "werkzeug.datastructures.headers",
+        "IMPORTS",
+        "werkzeug.datastructures.structures"
+      ],
+      [
+        "werkzeug.datastructures.file_storage",
+        "IMPORTS",
+        "werkzeug.datastructures.structures"
+      ],
+      [
+        "werkzeug.datastructures.structures",
+        "IMPORTS",
+        "werkzeug.datastructures.mixins"
+      ],
+      [
+        "werkzeug.datastructures.structures._TypeConversionDict",
+        "CONTAINS",
+        "werkzeug.datastructures.structures._TypeConversionDict.get"
+      ],
+      [
+        "werkzeug.datastructures.csp",
+        "IMPORTS",
+        "werkzeug.datastructures.structures"
+      ],
+      [
+        "werkzeug.datastructures.structures",
+        "IMPORTS",
+        "werkzeug._internal"
+      ],
+      [
+        "werkzeug.datastructures.structures._ImmutableTypeConversionDict.copy",
+        "CALLS",
+        "werkzeug.datastructures.structures._TypeConversionDict"
+      ],
+      [
+        "werkzeug.datastructures.structures._ImmutableTypeConversionDict",
+        "CONTAINS",
+        "werkzeug.datastructures.structures._ImmutableTypeConversionDict.copy"
+      ],
+      [
+        "werkzeug.datastructures.structures",
+        "CONTAINS",
+        "werkzeug.datastructures.structures._ImmutableTypeConversionDict"
+      ],
+      [
+        "werkzeug.datastructures.range",
+        "IMPORTS",
+        "werkzeug._internal"
+      ],
+      [
+        "werkzeug.datastructures.structures",
+        "CONTAINS",
+        "werkzeug.datastructures.structures.MultiDict"
+      ]
+    ],
+    "latency_s": 0.71,
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "What does the function `flask.app.Flask.teleport` call?",
+    "category": "out_of_scope",
+    "hops": 0,
+    "gold_answer": null,
+    "generated_answer": "I don't know",
+    "seeds": [
+      "flask.app.Flask",
+      "flask.app",
+      "flask"
+    ],
+    "retrieved_triples": [
+      [
+        "flask.cli",
+        "IMPORTS",
+        "flask.app"
+      ],
+      [
+        "flask",
+        "CONTAINS",
+        "flask.app"
+      ],
+      [
+        "flask.app",
+        "IMPORTS",
+        "flask"
+      ],
+      [
+        "flask",
+        "CONTAINS",
+        "flask.cli"
+      ],
+      [
+        "flask.cli",
+        "IMPORTS",
+        "flask"
+      ],
+      [
+        "flask.app",
+        "IMPORTS",
+        "flask.ctx"
+      ],
+      [
+        "flask.ctx",
+        "IMPORTS",
+        "flask.app"
+      ],
+      [
+        "flask",
+        "CONTAINS",
+        "flask.ctx"
+      ],
+      [
+        "flask.ctx",
+        "IMPORTS",
+        "flask"
+      ],
+      [
+        "flask.app",
+        "IMPORTS",
+        "flask.wrappers"
+      ],
+      [
+        "flask.app",
+        "IMPORTS",
+        "flask.globals"
+      ],
+      [
+        "flask.globals",
+        "IMPORTS",
+        "flask.app"
+      ]
+    ],
+    "latency_s": 0.42
+  },
+  {
+    "question": "What does the function `flask.cli.ScriptInfo.predict_future` call?",
+    "category": "out_of_scope",
+    "hops": 0,
+    "gold_answer": null,
+    "generated_answer": "I don't know",
+    "seeds": [
+      "flask.cli.ScriptInfo",
+      "flask.cli",
+      "flask"
+    ],
+    "retrieved_triples": [
+      [
+        "flask",
+        "CONTAINS",
+        "flask.cli"
+      ],
+      [
+        "flask.cli",
+        "IMPORTS",
+        "flask"
+      ],
+      [
+        "flask.cli",
+        "CONTAINS",
+        "flask.cli.main"
+      ],
+      [
+        "flask.blueprints",
+        "IMPORTS",
+        "flask.cli"
+      ],
+      [
+        "flask.cli",
+        "IMPORTS",
+        "flask.app"
+      ],
+      [
+        "flask.cli",
+        "CONTAINS",
+        "flask.cli.run_command"
+      ],
+      [
+        "flask",
+        "CONTAINS",
+        "flask.blueprints"
+      ],
+      [
+        "flask",
+        "CONTAINS",
+        "flask.typing"
+      ],
+      [
+        "flask",
+        "CONTAINS",
+        "flask.app"
+      ],
+      [
+        "flask.app",
+        "IMPORTS",
+        "flask"
+      ],
+      [
+        "flask.cli",
+        "IMPORTS",
+        "flask.globals"
+      ],
+      [
+        "flask.cli.ScriptInfo",
+        "CONTAINS",
+        "flask.cli.ScriptInfo.__init__"
+      ]
+    ],
+    "latency_s": 0.42
+  },
+  {
+    "question": "What function does `werkzeug.datastructures.mixins.ImmutableHeadersMixin.__ior__` call?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "werkzeug.datastructures.mixins._immutable_error",
+    "generated_answer": "werkzeug.datastructures.mixins._immutable_error",
+    "seeds": [
+      "werkzeug.datastructures.mixins.ImmutableHeadersMixin.__ior__",
+      "werkzeug.datastructures.mixins.ImmutableHeadersMixin",
+      "werkzeug.datastructures.mixins"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.datastructures.mixins.ImmutableHeadersMixin",
+        "CONTAINS",
+        "werkzeug.datastructures.mixins.ImmutableHeadersMixin.__ior__"
+      ],
+      [
+        "werkzeug.datastructures.mixins.ImmutableHeadersMixin",
+        "CONTAINS",
+        "werkzeug.datastructures.mixins.ImmutableHeadersMixin.update"
+      ],
+      [
+        "werkzeug.datastructures.mixins.ImmutableHeadersMixin",
+        "CONTAINS",
+        "werkzeug.datastructures.mixins.ImmutableHeadersMixin.add"
+      ],
+      [
+        "werkzeug.datastructures.mixins.ImmutableHeadersMixin",
+        "CONTAINS",
+        "werkzeug.datastructures.mixins.ImmutableHeadersMixin.extend"
+      ],
+      [
+        "werkzeug.datastructures.mixins.ImmutableHeadersMixin",
+        "CONTAINS",
+        "werkzeug.datastructures.mixins.ImmutableHeadersMixin.__delitem__"
+      ],
+      [
+        "werkzeug.datastructures.mixins.ImmutableHeadersMixin",
+        "CONTAINS",
+        "werkzeug.datastructures.mixins.ImmutableHeadersMixin.set"
+      ],
+      [
+        "werkzeug.datastructures.mixins.ImmutableHeadersMixin.__ior__",
+        "CALLS",
+        "werkzeug.datastructures.mixins._immutable_error"
+      ],
+      [
+        "werkzeug.datastructures.mixins",
+        "CONTAINS",
+        "werkzeug.datastructures.mixins._always_update"
+      ],
+      [
+        "werkzeug.datastructures.mixins",
+        "CONTAINS",
+        "werkzeug.datastructures.mixins.ImmutableHeadersMixin"
+      ],
+      [
+        "werkzeug.datastructures.headers",
+        "IMPORTS",
+        "werkzeug.datastructures.mixins"
+      ],
+      [
+        "werkzeug.datastructures.mixins",
+        "CONTAINS",
+        "werkzeug.datastructures.mixins._immutable_error"
+      ],
+      [
+        "werkzeug.datastructures.mixins.ImmutableHeadersMixin.update",
+        "CALLS",
+        "werkzeug.datastructures.mixins._immutable_error"
+      ]
+    ],
+    "latency_s": 0.84,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "What does the function `numpy.core.ndarray` call?",
+    "category": "out_of_scope",
+    "hops": 0,
+    "gold_answer": null,
+    "generated_answer": "I don't know",
+    "seeds": [
+      "flask.sansio.blueprints.Blueprint.record"
+    ],
+    "retrieved_triples": [
+      [
+        "flask.sansio.blueprints.Blueprint.record_once",
+        "CALLS",
+        "flask.sansio.blueprints.Blueprint.record"
+      ],
+      [
+        "flask.sansio.blueprints.Blueprint.add_url_rule",
+        "CALLS",
+        "flask.sansio.blueprints.Blueprint.record"
+      ],
+      [
+        "flask.sansio.blueprints.Blueprint",
+        "CONTAINS",
+        "flask.sansio.blueprints.Blueprint.record"
+      ],
+      [
+        "flask.sansio.blueprints.Blueprint.register",
+        "CALLS",
+        "flask.sansio.blueprints.Blueprint.add_url_rule"
+      ],
+      [
+        "flask.sansio.blueprints.Blueprint",
+        "CONTAINS",
+        "flask.sansio.blueprints.Blueprint.register"
+      ],
+      [
+        "flask.sansio.blueprints.Blueprint.after_app_request",
+        "CALLS",
+        "flask.sansio.blueprints.Blueprint.record_once"
+      ],
+      [
+        "flask.sansio.blueprints.Blueprint",
+        "CONTAINS",
+        "flask.sansio.blueprints.Blueprint.after_app_request"
+      ],
+      [
+        "flask.sansio.blueprints.Blueprint",
+        "INHERITS",
+        "flask.sansio.scaffold.Scaffold"
+      ],
+      [
+        "flask.sansio.blueprints.Blueprint.app_errorhandler",
+        "CALLS",
+        "flask.sansio.blueprints.Blueprint.record_once"
+      ],
+      [
+        "flask.sansio.scaffold.Scaffold",
+        "CONTAINS",
+        "flask.sansio.scaffold.Scaffold.teardown_request"
+      ],
+      [
+        "flask.sansio.scaffold.Scaffold",
+        "CONTAINS",
+        "flask.sansio.scaffold.Scaffold.context_processor"
+      ],
+      [
+        "flask.sansio.scaffold.Scaffold",
+        "CONTAINS",
+        "flask.sansio.scaffold.Scaffold.__repr__"
+      ]
+    ],
+    "latency_s": 0.74
+  },
+  {
+    "question": "What module does `werkzeug.wrappers.response` import?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "werkzeug.utils",
+    "generated_answer": "werkzeug.utils",
+    "seeds": [
+      "werkzeug.wrappers.response",
+      "werkzeug.wrappers.response.Response._is_range_request_processable",
+      "werkzeug.wrappers.response.Response.calculate_content_length"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.wrappers.request"
+      ],
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "werkzeug.wrappers.response"
+      ],
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug.wrappers.response.Response",
+        "CONTAINS",
+        "werkzeug.wrappers.response.Response.calculate_content_length"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.wrappers.response"
+      ],
+      [
+        "werkzeug.test",
+        "IMPORTS",
+        "werkzeug.wrappers.response"
+      ],
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.test"
+      ],
+      [
+        "werkzeug.wrappers.response.Response.calculate_content_length",
+        "CALLS",
+        "werkzeug.wrappers.response.Response.iter_encoded"
+      ],
+      [
+        "werkzeug.wrappers.response.Response.calculate_content_length",
+        "CALLS",
+        "werkzeug.wrappers.response.Response._ensure_sequence"
+      ],
+      [
+        "werkzeug.wrappers.response.Response",
+        "CONTAINS",
+        "werkzeug.wrappers.response.Response.__repr__"
+      ],
+      [
+        "werkzeug.wrappers.response.Response.__repr__",
+        "CALLS",
+        "werkzeug.wrappers.response.Response.iter_encoded"
+      ],
+      [
+        "werkzeug.wrappers.response.Response",
+        "CONTAINS",
+        "werkzeug.wrappers.response.Response._is_range_request_processable"
+      ]
+    ],
+    "latency_s": 0.46,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "Which class defines the method `flask.sansio.app.App.make_aborter`?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "flask.sansio.app.App",
+    "generated_answer": "flask.sansio.app.App",
+    "seeds": [
+      "flask.sansio.app.App.make_aborter",
+      "flask.sansio.app.App",
+      "flask.sansio.app"
+    ],
+    "retrieved_triples": [
+      [
+        "flask.sansio.app.App",
+        "CONTAINS",
+        "flask.sansio.app.App.make_aborter"
+      ],
+      [
+        "flask.sansio.app",
+        "IMPORTS",
+        "flask.sansio.blueprints"
+      ],
+      [
+        "flask.sansio.blueprints",
+        "IMPORTS",
+        "flask.sansio.app"
+      ],
+      [
+        "flask.sansio.app",
+        "IMPORTS",
+        "flask.sansio.scaffold"
+      ],
+      [
+        "flask.sansio.app",
+        "CONTAINS",
+        "flask.sansio.app.App"
+      ],
+      [
+        "flask.sansio.app.App",
+        "CONTAINS",
+        "flask.sansio.app.App._check_setup_finished"
+      ],
+      [
+        "flask.sansio.app.App",
+        "CONTAINS",
+        "flask.sansio.app.App.shell_context_processor"
+      ],
+      [
+        "flask.sansio.app.App",
+        "CONTAINS",
+        "flask.sansio.app.App.teardown_appcontext"
+      ],
+      [
+        "flask.sansio.app.App",
+        "CONTAINS",
+        "flask.sansio.app.App.debug"
+      ],
+      [
+        "flask.app",
+        "IMPORTS",
+        "flask.sansio.app"
+      ],
+      [
+        "flask.sansio.app.App.__init__",
+        "CALLS",
+        "flask.sansio.app.App.make_aborter"
+      ],
+      [
+        "flask.debughelpers",
+        "IMPORTS",
+        "flask.sansio.app"
+      ]
+    ],
+    "latency_s": 0.66,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "Which module defines the function `click.termui.prompt`?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "click.termui",
+    "generated_answer": "click.termui",
+    "seeds": [
+      "click.termui.prompt",
+      "click.termui",
+      "click"
+    ],
+    "retrieved_triples": [
+      [
+        "click.termui",
+        "CONTAINS",
+        "click.termui.hidden_prompt_func"
+      ],
+      [
+        "click",
+        "CONTAINS",
+        "click.termui"
+      ],
+      [
+        "click.termui",
+        "IMPORTS",
+        "click"
+      ],
+      [
+        "click.termui",
+        "IMPORTS",
+        "click._termui_impl"
+      ],
+      [
+        "click.termui.prompt",
+        "CALLS",
+        "click.termui._build_prompt"
+      ],
+      [
+        "click.termui.prompt",
+        "CALLS",
+        "click.termui._readline_prompt"
+      ],
+      [
+        "click.termui",
+        "CONTAINS",
+        "click.termui.raw_terminal"
+      ],
+      [
+        "click",
+        "CONTAINS",
+        "click._termui_impl"
+      ],
+      [
+        "click.termui",
+        "CONTAINS",
+        "click.termui.launch"
+      ],
+      [
+        "click.termui",
+        "CONTAINS",
+        "click.termui.confirm"
+      ],
+      [
+        "click.termui",
+        "CONTAINS",
+        "click.termui.pause"
+      ],
+      [
+        "click.termui",
+        "CONTAINS",
+        "click.termui.prompt"
+      ]
+    ],
+    "latency_s": 0.46,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "Which package ultimately contains the class `werkzeug.datastructures.cache_control._CacheControl` (via its module)?",
+    "category": "answerable",
+    "hops": 2,
+    "gold_answer": "werkzeug",
+    "generated_answer": "werkzeug",
+    "seeds": [
+      "werkzeug.datastructures.cache_control._CacheControl",
+      "werkzeug.datastructures.cache_control._CacheControl._get_directive",
+      "werkzeug.datastructures.cache_control._CacheControl.__getitem__"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.datastructures.cache_control._CacheControl",
+        "CONTAINS",
+        "werkzeug.datastructures.cache_control._CacheControl.__getitem__"
+      ],
+      [
+        "werkzeug.datastructures.cache_control._CacheControl",
+        "CONTAINS",
+        "werkzeug.datastructures.cache_control._CacheControl._get_directive"
+      ],
+      [
+        "werkzeug.datastructures.cache_control._CacheControl",
+        "CONTAINS",
+        "werkzeug.datastructures.cache_control._CacheControl.__iter__"
+      ],
+      [
+        "werkzeug.datastructures.cache_control._CacheControl",
+        "CONTAINS",
+        "werkzeug.datastructures.cache_control._CacheControl.__str__"
+      ],
+      [
+        "werkzeug.datastructures.cache_control._CacheControl",
+        "CONTAINS",
+        "werkzeug.datastructures.cache_control._CacheControl.__len__"
+      ],
+      [
+        "werkzeug.datastructures.cache_control._CacheControl",
+        "CONTAINS",
+        "werkzeug.datastructures.cache_control._CacheControl.from_header"
+      ],
+      [
+        "werkzeug.datastructures.cache_control._CacheControl",
+        "CONTAINS",
+        "werkzeug.datastructures.cache_control._CacheControl.to_header"
+      ],
+      [
+        "werkzeug.datastructures.cache_control._cache_control_property",
+        "CALLS",
+        "werkzeug.datastructures.cache_control._CacheControl._get_directive"
+      ],
+      [
+        "werkzeug.datastructures.cache_control._CacheControl",
+        "CONTAINS",
+        "werkzeug.datastructures.cache_control._CacheControl.__repr__"
+      ],
+      [
+        "werkzeug.datastructures.cache_control._CacheControl.to_header",
+        "CALLS",
+        "werkzeug.http.dump_header"
+      ],
+      [
+        "werkzeug.http",
+        "CONTAINS",
+        "werkzeug.http.dump_header"
+      ],
+      [
+        "werkzeug.http",
+        "CONTAINS",
+        "werkzeug.http.parse_dict_header"
+      ]
+    ],
+    "latency_s": 0.68,
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "What does `django.db.models.Model` inherit from?",
+    "category": "out_of_scope",
+    "hops": 0,
+    "gold_answer": null,
+    "generated_answer": "I don't know",
+    "seeds": [
+      "flask.sansio.scaffold.Scaffold",
+      "werkzeug.test.EnvironBuilder",
+      "flask.sansio.blueprints.BlueprintSetupState"
+    ],
+    "retrieved_triples": [
+      [
+        "flask.sansio.app.App",
+        "INHERITS",
+        "flask.sansio.scaffold.Scaffold"
+      ],
+      [
+        "flask.sansio.blueprints.Blueprint",
+        "INHERITS",
+        "flask.sansio.scaffold.Scaffold"
+      ],
+      [
+        "flask.sansio.blueprints.Blueprint.make_setup_state",
+        "CALLS",
+        "flask.sansio.blueprints.BlueprintSetupState"
+      ],
+      [
+        "flask.sansio.scaffold.Scaffold",
+        "CONTAINS",
+        "flask.sansio.scaffold.Scaffold.query"
+      ],
+      [
+        "flask.sansio.blueprints.BlueprintSetupState",
+        "CONTAINS",
+        "flask.sansio.blueprints.BlueprintSetupState.add_url_rule"
+      ],
+      [
+        "flask.sansio.scaffold.Scaffold",
+        "CONTAINS",
+        "flask.sansio.scaffold.Scaffold.__repr__"
+      ],
+      [
+        "flask.sansio.scaffold.Scaffold",
+        "CONTAINS",
+        "flask.sansio.scaffold.Scaffold.delete"
+      ],
+      [
+        "flask.sansio.scaffold.Scaffold",
+        "CONTAINS",
+        "flask.sansio.scaffold.Scaffold.get"
+      ],
+      [
+        "flask.sansio.blueprints.BlueprintSetupState",
+        "CONTAINS",
+        "flask.sansio.blueprints.BlueprintSetupState.__init__"
+      ],
+      [
+        "werkzeug.test.EnvironBuilder",
+        "CONTAINS",
+        "werkzeug.test.EnvironBuilder.from_environ"
+      ],
+      [
+        "werkzeug.test.EnvironBuilder",
+        "CONTAINS",
+        "werkzeug.test.EnvironBuilder.get_environ"
+      ],
+      [
+        "werkzeug.test.EnvironBuilder",
+        "CONTAINS",
+        "werkzeug.test.EnvironBuilder.get_request"
+      ]
+    ],
+    "latency_s": 0.72
+  },
+  {
+    "question": "What module does `werkzeug.sansio.request` import?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "werkzeug.datastructures.accept",
+    "generated_answer": "werkzeug.sansio.utils, werkzeug.sansio.http, werkzeug.utils",
+    "seeds": [
+      "werkzeug.sansio.request",
+      "werkzeug.sansio.request.Request._parse_content_type",
+      "werkzeug.sansio.request.Request.mimetype_params"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.sansio.request",
+        "IMPORTS",
+        "werkzeug.sansio.utils"
+      ],
+      [
+        "werkzeug.sansio.request",
+        "IMPORTS",
+        "werkzeug.sansio.http"
+      ],
+      [
+        "werkzeug.sansio.request",
+        "IMPORTS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug.wrappers.request",
+        "IMPORTS",
+        "werkzeug.sansio.request"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.sansio.request"
+      ],
+      [
+        "werkzeug.sansio.request",
+        "CONTAINS",
+        "werkzeug.sansio.request.Request"
+      ],
+      [
+        "werkzeug.sansio.request.Request",
+        "CONTAINS",
+        "werkzeug.sansio.request.Request.mimetype_params"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.sansio"
+      ],
+      [
+        "werkzeug.sansio.response",
+        "IMPORTS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.sansio.response"
+      ],
+      [
+        "werkzeug.sansio.request.Request.mimetype_params",
+        "CALLS",
+        "werkzeug.sansio.request.Request._parse_content_type"
+      ],
+      [
+        "werkzeug.sansio.request.Request",
+        "CONTAINS",
+        "werkzeug.sansio.request.Request._parse_content_type"
+      ]
+    ],
+    "latency_s": 0.88,
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "exact_match": false,
+    "f1": 0.18181818181818182
+  },
+  {
+    "question": "What function does `werkzeug.datastructures.structures.CombinedMultiDict.__iter__` call?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "werkzeug.datastructures.structures.CombinedMultiDict._keys_impl",
+    "generated_answer": "I don't know",
+    "seeds": [
+      "werkzeug.datastructures.structures.CombinedMultiDict.__iter__",
+      "werkzeug.datastructures.structures.CombinedMultiDict",
+      "werkzeug.datastructures.structures"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.datastructures.structures.CombinedMultiDict",
+        "CONTAINS",
+        "werkzeug.datastructures.structures.CombinedMultiDict.__repr__"
+      ],
+      [
+        "werkzeug.datastructures.structures.CombinedMultiDict",
+        "CONTAINS",
+        "werkzeug.datastructures.structures.CombinedMultiDict.__init__"
+      ],
+      [
+        "werkzeug.datastructures.structures.CombinedMultiDict",
+        "CONTAINS",
+        "werkzeug.datastructures.structures.CombinedMultiDict.__len__"
+      ],
+      [
+        "werkzeug.datastructures.structures.CombinedMultiDict",
+        "CONTAINS",
+        "werkzeug.datastructures.structures.CombinedMultiDict.values"
+      ],
+      [
+        "werkzeug.datastructures.structures.CombinedMultiDict",
+        "CONTAINS",
+        "werkzeug.datastructures.structures.CombinedMultiDict.__reduce_ex__"
+      ],
+      [
+        "werkzeug.datastructures.structures.CombinedMultiDict",
+        "CONTAINS",
+        "werkzeug.datastructures.structures.CombinedMultiDict.keys"
+      ],
+      [
+        "werkzeug.datastructures.structures",
+        "IMPORTS",
+        "werkzeug.datastructures.set"
+      ],
+      [
+        "werkzeug.datastructures.headers",
+        "IMPORTS",
+        "werkzeug.datastructures.structures"
+      ],
+      [
+        "werkzeug.datastructures.structures",
+        "IMPORTS",
+        "werkzeug.datastructures.mixins"
+      ],
+      [
+        "werkzeug.datastructures.file_storage",
+        "IMPORTS",
+        "werkzeug.datastructures.structures"
+      ],
+      [
+        "werkzeug.datastructures.csp",
+        "IMPORTS",
+        "werkzeug.datastructures.structures"
+      ],
+      [
+        "werkzeug.datastructures.structures",
+        "IMPORTS",
+        "werkzeug._internal"
+      ]
+    ],
+    "latency_s": 0.74,
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "exact_match": false,
+    "f1": 0.0
+  },
+  {
+    "question": "Which class defines the method `werkzeug.local._ProxyLookup.__call__`?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "werkzeug.local._ProxyLookup",
+    "generated_answer": "werkzeug.local._ProxyLookup",
+    "seeds": [
+      "werkzeug.local._ProxyLookup.__call__",
+      "werkzeug.local._ProxyLookup",
+      "werkzeug.local"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.local._ProxyLookup.__call__",
+        "CALLS",
+        "werkzeug.local._ProxyLookup.__get__"
+      ],
+      [
+        "werkzeug.local._ProxyLookup",
+        "CONTAINS",
+        "werkzeug.local._ProxyLookup.__call__"
+      ],
+      [
+        "werkzeug.local._ProxyLookup",
+        "CONTAINS",
+        "werkzeug.local._ProxyLookup.__repr__"
+      ],
+      [
+        "werkzeug.local._ProxyIOp",
+        "INHERITS",
+        "werkzeug.local._ProxyLookup"
+      ],
+      [
+        "werkzeug.local._ProxyLookup",
+        "CONTAINS",
+        "werkzeug.local._ProxyLookup.__get__"
+      ],
+      [
+        "werkzeug.local._ProxyLookup",
+        "CONTAINS",
+        "werkzeug.local._ProxyLookup.__set_name__"
+      ],
+      [
+        "werkzeug.local",
+        "CONTAINS",
+        "werkzeug.local._ProxyLookup"
+      ],
+      [
+        "werkzeug.local",
+        "CONTAINS",
+        "werkzeug.local.LocalProxy"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.local"
+      ],
+      [
+        "werkzeug.local",
+        "CONTAINS",
+        "werkzeug.local._identity"
+      ],
+      [
+        "werkzeug.local",
+        "IMPORTS",
+        "werkzeug.wsgi"
+      ],
+      [
+        "werkzeug.local",
+        "CONTAINS",
+        "werkzeug.local.LocalManager"
+      ]
+    ],
+    "latency_s": 0.64,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": true,
+    "f1": 1.0
+  },
+  {
+    "question": "What does the function `jinja2.environment.Environment.time_travel` call?",
+    "category": "out_of_scope",
+    "hops": 0,
+    "gold_answer": null,
+    "generated_answer": "I don't know",
+    "seeds": [
+      "jinja2.environment.Environment",
+      "jinja2.environment",
+      "jinja2"
+    ],
+    "retrieved_triples": [
+      [
+        "jinja2.environment",
+        "IMPORTS",
+        "jinja2.utils"
+      ],
+      [
+        "jinja2.utils",
+        "IMPORTS",
+        "jinja2.environment"
+      ],
+      [
+        "jinja2",
+        "CONTAINS",
+        "jinja2.debug"
+      ],
+      [
+        "jinja2.environment",
+        "CONTAINS",
+        "jinja2.environment.Template"
+      ],
+      [
+        "jinja2",
+        "CONTAINS",
+        "jinja2.utils"
+      ],
+      [
+        "jinja2.environment.Environment",
+        "CONTAINS",
+        "jinja2.environment.Environment._load_template"
+      ],
+      [
+        "jinja2.environment.Environment",
+        "CONTAINS",
+        "jinja2.environment.Environment.__init__"
+      ],
+      [
+        "jinja2.environment",
+        "CONTAINS",
+        "jinja2.environment._environment_config_check"
+      ],
+      [
+        "jinja2.environment.Environment",
+        "CONTAINS",
+        "jinja2.environment.Environment.add_extension"
+      ],
+      [
+        "jinja2",
+        "CONTAINS",
+        "jinja2.constants"
+      ],
+      [
+        "jinja2.environment",
+        "IMPORTS",
+        "jinja2.runtime"
+      ],
+      [
+        "jinja2.runtime",
+        "IMPORTS",
+        "jinja2.environment"
+      ]
+    ],
+    "latency_s": 0.55
+  },
+  {
+    "question": "What does `flask.nonexistent_module.FakeClass` inherit from?",
+    "category": "out_of_scope",
+    "hops": 0,
+    "gold_answer": null,
+    "generated_answer": "I don't know",
+    "seeds": [
+      "flask"
+    ],
+    "retrieved_triples": [
+      [
+        "flask",
+        "CONTAINS",
+        "flask.__main__"
+      ],
+      [
+        "flask",
+        "CONTAINS",
+        "flask.testing"
+      ],
+      [
+        "flask",
+        "CONTAINS",
+        "flask.wrappers"
+      ],
+      [
+        "flask.wrappers",
+        "IMPORTS",
+        "flask"
+      ],
+      [
+        "flask",
+        "CONTAINS",
+        "flask.cli"
+      ],
+      [
+        "flask.cli",
+        "IMPORTS",
+        "flask"
+      ],
+      [
+        "flask.blueprints",
+        "IMPORTS",
+        "flask.wrappers"
+      ],
+      [
+        "flask.blueprints",
+        "IMPORTS",
+        "flask.cli"
+      ],
+      [
+        "flask.globals",
+        "IMPORTS",
+        "flask.wrappers"
+      ],
+      [
+        "flask.wrappers",
+        "IMPORTS",
+        "flask.globals"
+      ],
+      [
+        "flask.ctx",
+        "IMPORTS",
+        "flask.globals"
+      ],
+      [
+        "flask.globals",
+        "IMPORTS",
+        "flask.ctx"
+      ]
+    ],
+    "latency_s": 0.41
+  },
+  {
+    "question": "Which module defines the function `click.decorators.help_option`?",
+    "category": "answerable",
+    "hops": 1,
+    "gold_answer": "click.decorators",
+    "generated_answer": "click.utils",
+    "seeds": [
+      "click.decorators.help_option",
+      "click.decorators",
+      "click"
+    ],
+    "retrieved_triples": [
+      [
+        "click.decorators",
+        "CONTAINS",
+        "click.decorators.help_option"
+      ],
+      [
+        "click",
+        "CONTAINS",
+        "click.decorators"
+      ],
+      [
+        "click.decorators",
+        "CONTAINS",
+        "click.decorators.command"
+      ],
+      [
+        "click.core.Command.get_help_option",
+        "CALLS",
+        "click.decorators.help_option"
+      ],
+      [
+        "click.decorators.help_option",
+        "CALLS",
+        "click.decorators.option"
+      ],
+      [
+        "click.decorators",
+        "CONTAINS",
+        "click.decorators.pass_context"
+      ],
+      [
+        "click.decorators",
+        "CONTAINS",
+        "click.decorators.pass_obj"
+      ],
+      [
+        "click.decorators",
+        "IMPORTS",
+        "click.utils"
+      ],
+      [
+        "click",
+        "CONTAINS",
+        "click._utils"
+      ],
+      [
+        "click.core",
+        "IMPORTS",
+        "click.decorators"
+      ],
+      [
+        "click",
+        "CONTAINS",
+        "click.utils"
+      ],
+      [
+        "click",
+        "CONTAINS",
+        "click.parser"
+      ]
+    ],
+    "latency_s": 0.37,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 1.0,
+    "exact_match": false,
+    "f1": 0.5
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "n_questions": 71,
+  "n_answerable": 56,
+  "n_out_of_scope": 15,
+  "retrieval_precision_at_k": 0.05952380952380952,
+  "retrieval_recall_at_k": 0.625,
+  "answer_exact_match": 0.6785714285714286,
+  "answer_f1": 0.7385500412286127,
+  "hallucination_rate": 0.06666666666666667,
+  "avg_latency_s": 0.7576056338028169,
+  "gnn_link_prediction_val_auc": 0.9372446152976426,
+  "gnn_link_prediction_test_auc": 0.949912374922268
+}

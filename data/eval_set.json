@@ -1,0 +1,905 @@
+[
+  {
+    "question": "Which package contains the module `werkzeug.testapp`?",
+    "gold_answer": "werkzeug",
+    "gold_triples": [
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.testapp"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "Which module defines the class `werkzeug.debug.DebuggedApplication`?",
+    "gold_answer": "werkzeug.debug",
+    "gold_triples": [
+      [
+        "werkzeug.debug",
+        "CONTAINS",
+        "werkzeug.debug.DebuggedApplication"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "What does `werkzeug.quantum_routing.TeleportHandler` inherit from?",
+    "gold_answer": null,
+    "gold_triples": [],
+    "hops": 0,
+    "category": "out_of_scope"
+  },
+  {
+    "question": "Which class defines the method `click.testing.CliRunner.isolated_filesystem`?",
+    "gold_answer": "click.testing.CliRunner",
+    "gold_triples": [
+      [
+        "click.testing.CliRunner",
+        "CONTAINS",
+        "click.testing.CliRunner.isolated_filesystem"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "Which class defines the method `jinja2.exceptions.TemplateError.__init__`?",
+    "gold_answer": "jinja2.exceptions.TemplateError",
+    "gold_triples": [
+      [
+        "jinja2.exceptions.TemplateError",
+        "CONTAINS",
+        "jinja2.exceptions.TemplateError.__init__"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "Name a class defined in a module that `werkzeug.utils` imports.",
+    "gold_answer": "markupsafe.Markup",
+    "gold_triples": [
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "markupsafe"
+      ],
+      [
+        "markupsafe",
+        "CONTAINS",
+        "markupsafe.Markup"
+      ]
+    ],
+    "hops": 2,
+    "category": "answerable"
+  },
+  {
+    "question": "Which package contains the module `flask.views`?",
+    "gold_answer": "flask",
+    "gold_triples": [
+      [
+        "flask",
+        "CONTAINS",
+        "flask.views"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "What module does `werkzeug.middleware.lint` import?",
+    "gold_answer": "werkzeug.wsgi",
+    "gold_triples": [
+      [
+        "werkzeug.middleware.lint",
+        "IMPORTS",
+        "werkzeug.wsgi"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "What class does `flask.json.tag.TagUUID` inherit from?",
+    "gold_answer": "flask.json.tag.JSONTag",
+    "gold_triples": [
+      [
+        "flask.json.tag.TagUUID",
+        "INHERITS",
+        "flask.json.tag.JSONTag"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "Which package ultimately contains the class `flask.ctx._AppCtxGlobals` (via its module)?",
+    "gold_answer": "flask",
+    "gold_triples": [
+      [
+        "flask",
+        "CONTAINS",
+        "flask.ctx"
+      ],
+      [
+        "flask.ctx",
+        "CONTAINS",
+        "flask.ctx._AppCtxGlobals"
+      ]
+    ],
+    "hops": 2,
+    "category": "answerable"
+  },
+  {
+    "question": "Which class defines the method `click.core.Group.to_info_dict`?",
+    "gold_answer": "click.core.Group",
+    "gold_triples": [
+      [
+        "click.core.Group",
+        "CONTAINS",
+        "click.core.Group.to_info_dict"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "Name a class defined in a module that `jinja2.ext` imports.",
+    "gold_answer": "jinja2.runtime.DebugUndefined",
+    "gold_triples": [
+      [
+        "jinja2.ext",
+        "IMPORTS",
+        "jinja2.runtime"
+      ],
+      [
+        "jinja2.runtime",
+        "CONTAINS",
+        "jinja2.runtime.DebugUndefined"
+      ]
+    ],
+    "hops": 2,
+    "category": "answerable"
+  },
+  {
+    "question": "What does `jinja2.blockchain.SmartTemplate` inherit from?",
+    "gold_answer": null,
+    "gold_triples": [],
+    "hops": 0,
+    "category": "out_of_scope"
+  },
+  {
+    "question": "What class does `werkzeug.exceptions.HTTPVersionNotSupported` inherit from?",
+    "gold_answer": "werkzeug.exceptions.HTTPException",
+    "gold_triples": [
+      [
+        "werkzeug.exceptions.HTTPVersionNotSupported",
+        "INHERITS",
+        "werkzeug.exceptions.HTTPException"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "What class does `werkzeug.routing.rules.EndpointPrefix` inherit from?",
+    "gold_answer": "werkzeug.routing.rules.RuleFactory",
+    "gold_triples": [
+      [
+        "werkzeug.routing.rules.EndpointPrefix",
+        "INHERITS",
+        "werkzeug.routing.rules.RuleFactory"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "What does the function `werkzeug.wrappers.Response.levitate` call?",
+    "gold_answer": null,
+    "gold_triples": [],
+    "hops": 0,
+    "category": "out_of_scope"
+  },
+  {
+    "question": "Name a class defined in a module that `jinja2.runtime` imports.",
+    "gold_answer": "jinja2.environment.TemplateExpression",
+    "gold_triples": [
+      [
+        "jinja2.runtime",
+        "IMPORTS",
+        "jinja2.environment"
+      ],
+      [
+        "jinja2.environment",
+        "CONTAINS",
+        "jinja2.environment.TemplateExpression"
+      ]
+    ],
+    "hops": 2,
+    "category": "answerable"
+  },
+  {
+    "question": "Which module defines the class `flask.debughelpers.FormDataRoutingRedirect`?",
+    "gold_answer": "flask.debughelpers",
+    "gold_triples": [
+      [
+        "flask.debughelpers",
+        "CONTAINS",
+        "flask.debughelpers.FormDataRoutingRedirect"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "Which package ultimately contains the function `jinja2.utils.is_undefined` (via its module)?",
+    "gold_answer": "jinja2",
+    "gold_triples": [
+      [
+        "jinja2",
+        "CONTAINS",
+        "jinja2.utils"
+      ],
+      [
+        "jinja2.utils",
+        "CONTAINS",
+        "jinja2.utils.is_undefined"
+      ]
+    ],
+    "hops": 2,
+    "category": "answerable"
+  },
+  {
+    "question": "What class does `werkzeug.exceptions.NotImplemented` inherit from?",
+    "gold_answer": "werkzeug.exceptions.HTTPException",
+    "gold_triples": [
+      [
+        "werkzeug.exceptions.NotImplemented",
+        "INHERITS",
+        "werkzeug.exceptions.HTTPException"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "What does the function `click.core.Command.self_destruct` call?",
+    "gold_answer": null,
+    "gold_triples": [],
+    "hops": 0,
+    "category": "out_of_scope"
+  },
+  {
+    "question": "Which class defines the method `jinja2.utils.LRUCache.__delitem__`?",
+    "gold_answer": "jinja2.utils.LRUCache",
+    "gold_triples": [
+      [
+        "jinja2.utils.LRUCache",
+        "CONTAINS",
+        "jinja2.utils.LRUCache.__delitem__"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "What does `requests.sessions.Session` inherit from?",
+    "gold_answer": null,
+    "gold_triples": [],
+    "hops": 0,
+    "category": "out_of_scope"
+  },
+  {
+    "question": "Which module defines the class `werkzeug.sansio.request.Request`?",
+    "gold_answer": "werkzeug.sansio.request",
+    "gold_triples": [
+      [
+        "werkzeug.sansio.request",
+        "CONTAINS",
+        "werkzeug.sansio.request.Request"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "Which module defines the class `click.types.TupleInfoDict`?",
+    "gold_answer": "click.types",
+    "gold_triples": [
+      [
+        "click.types",
+        "CONTAINS",
+        "click.types.TupleInfoDict"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "What function does `flask.sansio.blueprints.Blueprint.add_app_template_test` call?",
+    "gold_answer": "flask.sansio.blueprints.Blueprint.record_once",
+    "gold_triples": [
+      [
+        "flask.sansio.blueprints.Blueprint.add_app_template_test",
+        "CALLS",
+        "flask.sansio.blueprints.Blueprint.record_once"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "What does the function `pandas.DataFrame.pivot_table` call?",
+    "gold_answer": null,
+    "gold_triples": [],
+    "hops": 0,
+    "category": "out_of_scope"
+  },
+  {
+    "question": "Which package ultimately contains the class `jinja2.idtracking.RootVisitor` (via its module)?",
+    "gold_answer": "jinja2",
+    "gold_triples": [
+      [
+        "jinja2",
+        "CONTAINS",
+        "jinja2.idtracking"
+      ],
+      [
+        "jinja2.idtracking",
+        "CONTAINS",
+        "jinja2.idtracking.RootVisitor"
+      ]
+    ],
+    "hops": 2,
+    "category": "answerable"
+  },
+  {
+    "question": "Which module defines the function `click.utils._posixify`?",
+    "gold_answer": "click.utils",
+    "gold_triples": [
+      [
+        "click.utils",
+        "CONTAINS",
+        "click.utils._posixify"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "Which package ultimately contains the function `werkzeug.http.is_hop_by_hop_header` (via its module)?",
+    "gold_answer": "werkzeug",
+    "gold_triples": [
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.http"
+      ],
+      [
+        "werkzeug.http",
+        "CONTAINS",
+        "werkzeug.http.is_hop_by_hop_header"
+      ]
+    ],
+    "hops": 2,
+    "category": "answerable"
+  },
+  {
+    "question": "Which package contains the module `werkzeug.sansio.http`?",
+    "gold_answer": "werkzeug",
+    "gold_triples": [
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.sansio.http"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "What does `click.astro.StarCommand` inherit from?",
+    "gold_answer": null,
+    "gold_triples": [],
+    "hops": 0,
+    "category": "out_of_scope"
+  },
+  {
+    "question": "What module does `flask.templating` import?",
+    "gold_answer": "flask.signals",
+    "gold_triples": [
+      [
+        "flask.templating",
+        "IMPORTS",
+        "flask.signals"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "Name a class defined in a module that `werkzeug.formparser` imports.",
+    "gold_answer": "werkzeug.sansio.multipart.File",
+    "gold_triples": [
+      [
+        "werkzeug.formparser",
+        "IMPORTS",
+        "werkzeug.sansio.multipart"
+      ],
+      [
+        "werkzeug.sansio.multipart",
+        "CONTAINS",
+        "werkzeug.sansio.multipart.File"
+      ]
+    ],
+    "hops": 2,
+    "category": "answerable"
+  },
+  {
+    "question": "Which module defines the class `flask.templating.Environment`?",
+    "gold_answer": "flask.templating",
+    "gold_triples": [
+      [
+        "flask.templating",
+        "CONTAINS",
+        "flask.templating.Environment"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "Which module defines the function `jinja2.tests.test_undefined`?",
+    "gold_answer": "jinja2.tests",
+    "gold_triples": [
+      [
+        "jinja2.tests",
+        "CONTAINS",
+        "jinja2.tests.test_undefined"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "Which package contains the module `werkzeug.debug.console`?",
+    "gold_answer": "werkzeug",
+    "gold_triples": [
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.debug.console"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "Which package ultimately contains the function `werkzeug.urls.uri_to_iri` (via its module)?",
+    "gold_answer": "werkzeug",
+    "gold_triples": [
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.urls"
+      ],
+      [
+        "werkzeug.urls",
+        "CONTAINS",
+        "werkzeug.urls.uri_to_iri"
+      ]
+    ],
+    "hops": 2,
+    "category": "answerable"
+  },
+  {
+    "question": "Which package contains the module `flask.signals`?",
+    "gold_answer": "flask",
+    "gold_triples": [
+      [
+        "flask",
+        "CONTAINS",
+        "flask.signals"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "What module does `werkzeug.wrappers.response` import?",
+    "gold_answer": "werkzeug.wsgi",
+    "gold_triples": [
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.wsgi"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "What does `itsdangerous.timetravel.Paradox` inherit from?",
+    "gold_answer": null,
+    "gold_triples": [],
+    "hops": 0,
+    "category": "out_of_scope"
+  },
+  {
+    "question": "What function does `jinja2.environment.Environment.compile` call?",
+    "gold_answer": "jinja2.environment.Environment._generate",
+    "gold_triples": [
+      [
+        "jinja2.environment.Environment.compile",
+        "CALLS",
+        "jinja2.environment.Environment._generate"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "What function does `jinja2.parser.Parser.parse_compare` call?",
+    "gold_answer": "jinja2.lexer.TokenStream.look",
+    "gold_triples": [
+      [
+        "jinja2.parser.Parser.parse_compare",
+        "CALLS",
+        "jinja2.lexer.TokenStream.look"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "What module does `click.core` import?",
+    "gold_answer": "click.exceptions",
+    "gold_triples": [
+      [
+        "click.core",
+        "IMPORTS",
+        "click.exceptions"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "Which package contains the module `werkzeug.routing.converters`?",
+    "gold_answer": "werkzeug",
+    "gold_triples": [
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.routing.converters"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "Name a class defined in a module that `werkzeug.wrappers.request` imports.",
+    "gold_answer": "werkzeug.datastructures.structures.CallbackDict",
+    "gold_triples": [
+      [
+        "werkzeug.wrappers.request",
+        "IMPORTS",
+        "werkzeug.datastructures.structures"
+      ],
+      [
+        "werkzeug.datastructures.structures",
+        "CONTAINS",
+        "werkzeug.datastructures.structures.CallbackDict"
+      ]
+    ],
+    "hops": 2,
+    "category": "answerable"
+  },
+  {
+    "question": "What does `markupsafe.holograms.Renderer` inherit from?",
+    "gold_answer": null,
+    "gold_triples": [],
+    "hops": 0,
+    "category": "out_of_scope"
+  },
+  {
+    "question": "Which package ultimately contains the function `werkzeug.http.is_entity_header` (via its module)?",
+    "gold_answer": "werkzeug",
+    "gold_triples": [
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.http"
+      ],
+      [
+        "werkzeug.http",
+        "CONTAINS",
+        "werkzeug.http.is_entity_header"
+      ]
+    ],
+    "hops": 2,
+    "category": "answerable"
+  },
+  {
+    "question": "Which module defines the function `werkzeug.routing.rules.parse_converter_args`?",
+    "gold_answer": "werkzeug.routing.rules",
+    "gold_triples": [
+      [
+        "werkzeug.routing.rules",
+        "CONTAINS",
+        "werkzeug.routing.rules.parse_converter_args"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "Name a class defined in a module that `werkzeug.wrappers.response` imports.",
+    "gold_answer": "werkzeug.exceptions.NotAcceptable",
+    "gold_triples": [
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.exceptions"
+      ],
+      [
+        "werkzeug.exceptions",
+        "CONTAINS",
+        "werkzeug.exceptions.NotAcceptable"
+      ]
+    ],
+    "hops": 2,
+    "category": "answerable"
+  },
+  {
+    "question": "Name a class defined in a module that `werkzeug.sansio.response` imports.",
+    "gold_answer": "werkzeug.datastructures.structures._ImmutableDict",
+    "gold_triples": [
+      [
+        "werkzeug.sansio.response",
+        "IMPORTS",
+        "werkzeug.datastructures.structures"
+      ],
+      [
+        "werkzeug.datastructures.structures",
+        "CONTAINS",
+        "werkzeug.datastructures.structures._ImmutableDict"
+      ]
+    ],
+    "hops": 2,
+    "category": "answerable"
+  },
+  {
+    "question": "Which module defines the function `werkzeug._reloader._find_stat_paths`?",
+    "gold_answer": "werkzeug._reloader",
+    "gold_triples": [
+      [
+        "werkzeug._reloader",
+        "CONTAINS",
+        "werkzeug._reloader._find_stat_paths"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "What class does `werkzeug.sansio.multipart.Field` inherit from?",
+    "gold_answer": "werkzeug.sansio.multipart.Event",
+    "gold_triples": [
+      [
+        "werkzeug.sansio.multipart.Field",
+        "INHERITS",
+        "werkzeug.sansio.multipart.Event"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "What class does `click.shell_completion.PowerShellComplete` inherit from?",
+    "gold_answer": "click.shell_completion.ShellComplete",
+    "gold_triples": [
+      [
+        "click.shell_completion.PowerShellComplete",
+        "INHERITS",
+        "click.shell_completion.ShellComplete"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "What function does `jinja2.environment.Template.__new__` call?",
+    "gold_answer": "jinja2.environment.get_spontaneous_environment",
+    "gold_triples": [
+      [
+        "jinja2.environment.Template.__new__",
+        "CALLS",
+        "jinja2.environment.get_spontaneous_environment"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "Which module defines the class `werkzeug.datastructures.structures._TypeConversionDict`?",
+    "gold_answer": "werkzeug.datastructures.structures",
+    "gold_triples": [
+      [
+        "werkzeug.datastructures.structures",
+        "CONTAINS",
+        "werkzeug.datastructures.structures._TypeConversionDict"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "What does the function `flask.app.Flask.teleport` call?",
+    "gold_answer": null,
+    "gold_triples": [],
+    "hops": 0,
+    "category": "out_of_scope"
+  },
+  {
+    "question": "What does the function `flask.cli.ScriptInfo.predict_future` call?",
+    "gold_answer": null,
+    "gold_triples": [],
+    "hops": 0,
+    "category": "out_of_scope"
+  },
+  {
+    "question": "What function does `werkzeug.datastructures.mixins.ImmutableHeadersMixin.__ior__` call?",
+    "gold_answer": "werkzeug.datastructures.mixins._immutable_error",
+    "gold_triples": [
+      [
+        "werkzeug.datastructures.mixins.ImmutableHeadersMixin.__ior__",
+        "CALLS",
+        "werkzeug.datastructures.mixins._immutable_error"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "What does the function `numpy.core.ndarray` call?",
+    "gold_answer": null,
+    "gold_triples": [],
+    "hops": 0,
+    "category": "out_of_scope"
+  },
+  {
+    "question": "What module does `werkzeug.wrappers.response` import?",
+    "gold_answer": "werkzeug.utils",
+    "gold_triples": [
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.utils"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "Which class defines the method `flask.sansio.app.App.make_aborter`?",
+    "gold_answer": "flask.sansio.app.App",
+    "gold_triples": [
+      [
+        "flask.sansio.app.App",
+        "CONTAINS",
+        "flask.sansio.app.App.make_aborter"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "Which module defines the function `click.termui.prompt`?",
+    "gold_answer": "click.termui",
+    "gold_triples": [
+      [
+        "click.termui",
+        "CONTAINS",
+        "click.termui.prompt"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "Which package ultimately contains the class `werkzeug.datastructures.cache_control._CacheControl` (via its module)?",
+    "gold_answer": "werkzeug",
+    "gold_triples": [
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.datastructures.cache_control"
+      ],
+      [
+        "werkzeug.datastructures.cache_control",
+        "CONTAINS",
+        "werkzeug.datastructures.cache_control._CacheControl"
+      ]
+    ],
+    "hops": 2,
+    "category": "answerable"
+  },
+  {
+    "question": "What does `django.db.models.Model` inherit from?",
+    "gold_answer": null,
+    "gold_triples": [],
+    "hops": 0,
+    "category": "out_of_scope"
+  },
+  {
+    "question": "What module does `werkzeug.sansio.request` import?",
+    "gold_answer": "werkzeug.datastructures.accept",
+    "gold_triples": [
+      [
+        "werkzeug.sansio.request",
+        "IMPORTS",
+        "werkzeug.datastructures.accept"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "What function does `werkzeug.datastructures.structures.CombinedMultiDict.__iter__` call?",
+    "gold_answer": "werkzeug.datastructures.structures.CombinedMultiDict._keys_impl",
+    "gold_triples": [
+      [
+        "werkzeug.datastructures.structures.CombinedMultiDict.__iter__",
+        "CALLS",
+        "werkzeug.datastructures.structures.CombinedMultiDict._keys_impl"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "Which class defines the method `werkzeug.local._ProxyLookup.__call__`?",
+    "gold_answer": "werkzeug.local._ProxyLookup",
+    "gold_triples": [
+      [
+        "werkzeug.local._ProxyLookup",
+        "CONTAINS",
+        "werkzeug.local._ProxyLookup.__call__"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  },
+  {
+    "question": "What does the function `jinja2.environment.Environment.time_travel` call?",
+    "gold_answer": null,
+    "gold_triples": [],
+    "hops": 0,
+    "category": "out_of_scope"
+  },
+  {
+    "question": "What does `flask.nonexistent_module.FakeClass` inherit from?",
+    "gold_answer": null,
+    "gold_triples": [],
+    "hops": 0,
+    "category": "out_of_scope"
+  },
+  {
+    "question": "Which module defines the function `click.decorators.help_option`?",
+    "gold_answer": "click.decorators",
+    "gold_triples": [
+      [
+        "click.decorators",
+        "CONTAINS",
+        "click.decorators.help_option"
+      ]
+    ],
+    "hops": 1,
+    "category": "answerable"
+  }
+]

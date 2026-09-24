@@ -1,0 +1,20 @@
+{
+  "n_linking_examples": 40,
+  "n_hallucination_probe_questions": 17,
+  "fuzzy_linker": {
+    "linking_accuracy": 0.025,
+    "downstream_hallucination_rate": 0.11764705882352941
+  },
+  "learned_linker": {
+    "linking_accuracy": 0.65,
+    "downstream_hallucination_rate": 0.0
+  },
+  "one_disagreement_case": {
+    "mention_context": "In Flask, what class is used by default to represent an incoming HTTP request?",
+    "gold_entity": "flask.wrappers.Request",
+    "fuzzy_predicted": "werkzeug.wrappers.request.Request",
+    "fuzzy_correct": false,
+    "learned_predicted": "flask.wrappers.Request",
+    "learned_correct": true
+  }
+}

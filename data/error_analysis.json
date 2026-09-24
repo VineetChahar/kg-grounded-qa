@@ -1,0 +1,97 @@
+{
+  "source_run": "data/eval_results.json (canonical sage + gnn_beam + fuzzy-linker run, pre entity-linking-fix)",
+  "n_total_questions": 71,
+  "n_answerable": 56,
+  "n_wrong": 16,
+  "error_rate_of_answerable": 0.2857142857142857,
+  "categories": [
+    {
+      "category": "entity_linking_failure",
+      "count": 7,
+      "pct_of_errors": 0.4375,
+      "questions": [
+        "Name a class defined in a module that `werkzeug.utils` imports.",
+        "Name a class defined in a module that `jinja2.ext` imports.",
+        "Name a class defined in a module that `jinja2.runtime` imports.",
+        "Name a class defined in a module that `werkzeug.formparser` imports.",
+        "Name a class defined in a module that `werkzeug.wrappers.request` imports.",
+        "Name a class defined in a module that `werkzeug.wrappers.response` imports.",
+        "Name a class defined in a module that `werkzeug.sansio.response` imports."
+      ],
+      "representative_example": {
+        "question": "Name a class defined in a module that `werkzeug.utils` imports.",
+        "gold_answer": "markupsafe.Markup",
+        "generated_answer": "I don't know",
+        "retrieved_subgraph_top3": [
+          ["werkzeug.exceptions.HTTPException", "CONTAINS", "werkzeug.exceptions.HTTPException.name"],
+          ["click.testing._NamedTextIOWrapper", "CONTAINS", "click.testing._NamedTextIOWrapper.name"],
+          ["werkzeug.exceptions.HTTPException", "CONTAINS", "werkzeug.exceptions.HTTPException.__init__"]
+        ],
+        "diagnosis": "The imperative word 'Name' in the question template ('Name a class ... that `X` imports.') string-matched the extremely common `.name` attribute present on dozens of unrelated classes across the KG. The scoring formula's length tie-break (longer node id wins) let those long, irrelevant `*.name` node ids crowd the correct short entity ('werkzeug.utils') out of the top-3 seeds entirely - none of the 3 linked seeds have anything to do with the question. Retrieval then explored the wrong part of the graph, found nothing relevant, and the LLM correctly refused rather than hallucinating - so the SYSTEM behaved safely, but the pipeline never had a chance to answer correctly. This was the single largest error category (43.75% of all wrong answers) and is fixed in this phase - see 'fix' section below."
+      }
+    },
+    {
+      "category": "retrieval_miss",
+      "count": 4,
+      "pct_of_errors": 0.25,
+      "questions": [
+        "What module does `werkzeug.wrappers.response` import? (gold=werkzeug.wsgi)",
+        "What function does `jinja2.parser.Parser.parse_compare` call?",
+        "What module does `click.core` import?",
+        "What module does `werkzeug.sansio.request` import?"
+      ],
+      "representative_example": {
+        "question": "What function does `jinja2.parser.Parser.parse_compare` call?",
+        "gold_answer": "jinja2.lexer.TokenStream.look",
+        "generated_answer": "jinja2.lexer.Token.test",
+        "retrieved_subgraph_note": "12 triples retrieved, including the REAL edge parse_compare -> CALLS -> jinja2.lexer.Token.test (which is what the model answered, faithfully, from context) and parse_compare -> CALLS -> jinja2.lexer.TokenStream.skip_if. The gold edge parse_compare -> CALLS -> jinja2.lexer.TokenStream.look never appeared in the top-12 beam-search results, even though it is a real edge in the KG.",
+        "diagnosis": "Entity linking was correct and the LLM's answer was well-grounded in real, retrieved context - it just wasn't the arbitrary edge the eval template happened to pick as 'gold' from a node with many real outgoing CALLS edges. A pure retrieval-recall problem: beam_width=6 per hop caps how many of a high-fanout node's true edges make it into context."
+      }
+    },
+    {
+      "category": "generation_error",
+      "count": 3,
+      "pct_of_errors": 0.1875,
+      "questions": [
+        "Which module defines the function `jinja2.tests.test_undefined`?",
+        "Which module defines the class `werkzeug.datastructures.structures._TypeConversionDict`?",
+        "What module does `werkzeug.wrappers.response` import? (gold=werkzeug.utils)"
+      ],
+      "representative_example": {
+        "question": "Which module defines the function `jinja2.tests.test_undefined`?",
+        "gold_answer": "jinja2.tests",
+        "generated_answer": "jinja2.environment.Template.module",
+        "retrieved_subgraph_note": "The correct triple ['jinja2.tests', 'CONTAINS', 'jinja2.tests.test_undefined'] was retrieved and ranked #1 in the context handed to the LLM.",
+        "diagnosis": "The correct grounding triple was right there, ranked first, in the prompt. The LLM answered with an unrelated entity name ('jinja2.environment.Template.module') that appeared elsewhere in the same context, because top_k=3 entity linking pulled in two other, irrelevant seed entities alongside the correct one, and their triples diluted/distracted the context. This is a pure generation failure, not a retrieval failure - the 3B local model picked the wrong span out of a context that did contain the right answer."
+      }
+    },
+    {
+      "category": "ambiguous_or_underspecified_gold_answer",
+      "count": 2,
+      "pct_of_errors": 0.125,
+      "questions": [
+        "What module does `flask.templating` import? (gold=flask.signals)",
+        "What function does `jinja2.environment.Environment.compile` call?"
+      ],
+      "representative_example": {
+        "question": "What function does `jinja2.environment.Environment.compile` call?",
+        "gold_answer": "jinja2.environment.Environment._generate",
+        "generated_answer": "jinja2.environment.Environment._compile",
+        "retrieved_subgraph_note": "BOTH ['Environment.compile', 'CALLS', 'Environment._generate'] (gold) AND ['Environment.compile', 'CALLS', 'Environment._compile'] (generated) were retrieved and present in context.",
+        "diagnosis": "`compile()` genuinely calls multiple functions; the eval-set generator sampled exactly one CALLS edge as 'the' gold answer per question, which silently makes every other true CALLS edge from that same source a 'wrong' answer even when it's factually correct and grounded. Not a system bug - a templated-eval-set limitation. The same root cause also produced one exact duplicate-question-text case in the eval set (two entries both phrased 'What module does `werkzeug.wrappers.response` import?' with two different single-edge golds sampled from the same high-fanout source), which is worth fixing in the eval-set generator (dedupe by source node per template) if this project continues."
+      }
+    }
+  ],
+  "fix_applied": {
+    "target_category": "entity_linking_failure",
+    "root_cause": "retrieval.link_entities tokenized the ENTIRE question sentence, including generic instruction words like 'Name', which exact/substring-matched unrelated nodes whose short `name` attribute happens to be a common English word; a length-based tie-break then let those long, irrelevant node ids beat the correct (shorter) entity for a top-3 slot.",
+    "fix": "Prefer backtick-quoted spans in the question as the sole token-matching candidates when present (every templated question already marks its intended entity mention this way, e.g. 'imports `werkzeug.utils`'), falling back to full-sentence tokenization only when no backtick span exists.",
+    "before_after_on_affected_subset": {
+      "n_questions": 7,
+      "entity_linking_correct": {"before": "0/7 (0%)", "after": "7/7 (100%)"},
+      "retrieval_recall_at_k": {"before": 0.0, "after": 0.21428571428571427},
+      "answer_exact_match": {"before": 0.0, "after": 0.0},
+      "note": "Entity linking is now fully correct on every affected question - verified directly by comparing the top-linked seed against the module actually named in each question. Retrieval recall improved from 0.0 to 0.214 (previously not even the right region of the graph was explored). Exact-match stayed at 0 because a SECOND, different limitation now dominates this subcategory: these are all 2-hop 'name a class in a module that X imports' questions where X has many real 2-hop paths, and beam_width=6 per hop frequently doesn't surface the one arbitrary edge the eval template picked as gold - the same retrieval_miss / beam-width limitation documented above, now unmasked now that entity linking no longer fails first. This is reported honestly rather than overstated: the fix eliminated its target failure mode completely, but a pre-existing second bottleneck was hiding behind it."
+    }
+  }
+}

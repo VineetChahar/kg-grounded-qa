@@ -1,0 +1,19 @@
+# Ollama runs on the HOST, not in a container, because it needs GPU/Metal acceleration
+# that Docker Desktop on macOS cannot pass through. Start it on the host first:
+#   ollama serve &
+#   ollama pull qwen2.5:3b-instruct
+# The app container reaches it at host.docker.internal:11434 (mapped below).
+#
+# data/ and the cloned repos under data/repos are bind-mounted so the KG, embeddings,
+# GNN checkpoint and eval results built by the container land on the host and persist
+# across `docker compose up` runs.
+services:
+  app:
+    build: .
+    volumes:
+      - ./data:/app/data
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      - OLLAMA_HOST=http://host.docker.internal:11434
+    command: ["python", "-m", "kg_grounded_qa.run_eval"]

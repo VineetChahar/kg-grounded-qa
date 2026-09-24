@@ -1,0 +1,555 @@
+[
+  {
+    "question": "Name a class defined in a module that `werkzeug.utils` imports.",
+    "category": "answerable",
+    "hops": 2,
+    "gold_answer": "markupsafe.Markup",
+    "generated_answer": "werkzeug.utils.ImportStringError",
+    "seeds": [
+      "werkzeug.utils",
+      "werkzeug.utils.cached_property.__delete__",
+      "werkzeug.utils.ImportStringError.__init__"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "werkzeug._internal"
+      ],
+      [
+        "werkzeug.utils.ImportStringError",
+        "CONTAINS",
+        "werkzeug.utils.ImportStringError.__init__"
+      ],
+      [
+        "werkzeug.test",
+        "IMPORTS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug.utils",
+        "CONTAINS",
+        "werkzeug.utils.ImportStringError"
+      ],
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "werkzeug.wrappers"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug.wrappers.request",
+        "IMPORTS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug.utils.ImportStringError.__init__",
+        "CALLS",
+        "werkzeug.utils.import_string"
+      ],
+      [
+        "werkzeug._internal",
+        "CONTAINS",
+        "werkzeug._internal._Missing"
+      ],
+      [
+        "werkzeug.utils",
+        "CONTAINS",
+        "werkzeug.utils.import_string"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.local"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.sansio"
+      ]
+    ],
+    "latency_s": 15.45,
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "exact_match": false,
+    "f1": 0.0
+  },
+  {
+    "question": "Name a class defined in a module that `jinja2.ext` imports.",
+    "category": "answerable",
+    "hops": 2,
+    "gold_answer": "jinja2.runtime.DebugUndefined",
+    "generated_answer": "jinja2.ext.InternationalizationExtension",
+    "seeds": [
+      "jinja2.ext",
+      "jinja2.ext.InternationalizationExtension._install_callables",
+      "jinja2.ext.InternationalizationExtension._trim_whitespace"
+    ],
+    "retrieved_triples": [
+      [
+        "jinja2.ext",
+        "IMPORTS",
+        "jinja2.utils"
+      ],
+      [
+        "jinja2.environment",
+        "IMPORTS",
+        "jinja2.ext"
+      ],
+      [
+        "jinja2.ext",
+        "IMPORTS",
+        "jinja2.environment"
+      ],
+      [
+        "jinja2.ext",
+        "IMPORTS",
+        "jinja2.exceptions"
+      ],
+      [
+        "jinja2.ext",
+        "IMPORTS",
+        "jinja2.runtime"
+      ],
+      [
+        "jinja2.ext",
+        "CONTAINS",
+        "jinja2.ext.ExprStmtExtension"
+      ],
+      [
+        "jinja2.ext.InternationalizationExtension._install_callables",
+        "CALLS",
+        "jinja2.ext._make_new_gettext"
+      ],
+      [
+        "jinja2.ext.InternationalizationExtension._install_callables",
+        "CALLS",
+        "jinja2.ext._make_new_npgettext"
+      ],
+      [
+        "jinja2.ext.InternationalizationExtension._install_callables",
+        "CALLS",
+        "jinja2.ext._make_new_ngettext"
+      ],
+      [
+        "jinja2.ext.InternationalizationExtension._install_callables",
+        "CALLS",
+        "jinja2.ext._make_new_pgettext"
+      ],
+      [
+        "jinja2.ext.InternationalizationExtension._install",
+        "CALLS",
+        "jinja2.ext.InternationalizationExtension._install_callables"
+      ],
+      [
+        "jinja2.utils",
+        "CONTAINS",
+        "jinja2.utils.Namespace"
+      ]
+    ],
+    "latency_s": 0.71,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 0.5,
+    "exact_match": false,
+    "f1": 0.3333333333333333
+  },
+  {
+    "question": "Name a class defined in a module that `jinja2.runtime` imports.",
+    "category": "answerable",
+    "hops": 2,
+    "gold_answer": "jinja2.environment.TemplateExpression",
+    "generated_answer": "jinja2.runtime.Macro",
+    "seeds": [
+      "jinja2.runtime",
+      "jinja2.runtime.Undefined._fail_with_undefined_error",
+      "jinja2.runtime.ChainableUndefined.__getattr__"
+    ],
+    "retrieved_triples": [
+      [
+        "jinja2.runtime",
+        "IMPORTS",
+        "jinja2.utils"
+      ],
+      [
+        "jinja2.utils",
+        "IMPORTS",
+        "jinja2.runtime"
+      ],
+      [
+        "jinja2.environment",
+        "IMPORTS",
+        "jinja2.runtime"
+      ],
+      [
+        "jinja2.runtime",
+        "IMPORTS",
+        "jinja2.environment"
+      ],
+      [
+        "jinja2.runtime",
+        "CONTAINS",
+        "jinja2.runtime.Macro"
+      ],
+      [
+        "jinja2.exceptions",
+        "IMPORTS",
+        "jinja2.runtime"
+      ],
+      [
+        "jinja2.utils",
+        "CONTAINS",
+        "jinja2.utils.Namespace"
+      ],
+      [
+        "jinja2.runtime.make_logging_undefined",
+        "CALLS",
+        "jinja2.runtime.Undefined._fail_with_undefined_error"
+      ],
+      [
+        "jinja2.runtime.Undefined",
+        "CONTAINS",
+        "jinja2.runtime.Undefined._fail_with_undefined_error"
+      ],
+      [
+        "jinja2.exceptions.TemplateNotFound.__init__",
+        "CALLS",
+        "jinja2.runtime.Undefined._fail_with_undefined_error"
+      ],
+      [
+        "jinja2.environment.Environment.select_template",
+        "CALLS",
+        "jinja2.runtime.Undefined._fail_with_undefined_error"
+      ],
+      [
+        "jinja2.runtime.Undefined.__getattr__",
+        "CALLS",
+        "jinja2.runtime.Undefined._fail_with_undefined_error"
+      ]
+    ],
+    "latency_s": 0.63,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 0.5,
+    "exact_match": false,
+    "f1": 0.3333333333333333
+  },
+  {
+    "question": "Name a class defined in a module that `werkzeug.formparser` imports.",
+    "category": "answerable",
+    "hops": 2,
+    "gold_answer": "werkzeug.sansio.multipart.File",
+    "generated_answer": "werkzeug.datastructures.file_storage",
+    "seeds": [
+      "werkzeug.formparser",
+      "werkzeug.formparser.MultiPartParser.start_file_streaming",
+      "werkzeug.formparser.FormDataParser.parse_from_environ"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.formparser.FormDataParser",
+        "CONTAINS",
+        "werkzeug.formparser.FormDataParser.parse_from_environ"
+      ],
+      [
+        "werkzeug.formparser",
+        "IMPORTS",
+        "werkzeug._internal"
+      ],
+      [
+        "werkzeug.formparser.MultiPartParser",
+        "CONTAINS",
+        "werkzeug.formparser.MultiPartParser.start_file_streaming"
+      ],
+      [
+        "werkzeug.wrappers.request",
+        "IMPORTS",
+        "werkzeug.formparser"
+      ],
+      [
+        "werkzeug.formparser",
+        "IMPORTS",
+        "werkzeug.sansio.multipart"
+      ],
+      [
+        "werkzeug.formparser",
+        "IMPORTS",
+        "werkzeug.datastructures.headers"
+      ],
+      [
+        "werkzeug.formparser",
+        "IMPORTS",
+        "werkzeug.datastructures.file_storage"
+      ],
+      [
+        "werkzeug.formparser",
+        "CONTAINS",
+        "werkzeug.formparser.MultiPartParser"
+      ],
+      [
+        "werkzeug.formparser.MultiPartParser.parse",
+        "CALLS",
+        "werkzeug.formparser.MultiPartParser.start_file_streaming"
+      ],
+      [
+        "werkzeug.formparser.FormDataParser.parse_from_environ",
+        "CALLS",
+        "werkzeug.formparser.FormDataParser.parse"
+      ],
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "werkzeug._internal"
+      ],
+      [
+        "werkzeug.wrappers.request",
+        "IMPORTS",
+        "werkzeug.utils"
+      ]
+    ],
+    "latency_s": 0.56,
+    "retrieval_precision": 0.08333333333333333,
+    "retrieval_recall": 0.5,
+    "exact_match": false,
+    "f1": 0.5
+  },
+  {
+    "question": "Name a class defined in a module that `werkzeug.wrappers.request` imports.",
+    "category": "answerable",
+    "hops": 2,
+    "gold_answer": "werkzeug.datastructures.structures.CallbackDict",
+    "generated_answer": "werkzeug.wrappers.request",
+    "seeds": [
+      "werkzeug.wrappers.request",
+      "werkzeug.wrappers.request.Request._private_get_stream_for_parsing",
+      "werkzeug.wrappers.request.Request._private_make_form_data_parser"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.wrappers.request"
+      ],
+      [
+        "werkzeug.wrappers.request",
+        "IMPORTS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug._internal",
+        "IMPORTS",
+        "werkzeug.wrappers.request"
+      ],
+      [
+        "werkzeug.wrappers.request",
+        "IMPORTS",
+        "werkzeug._internal"
+      ],
+      [
+        "werkzeug.test",
+        "IMPORTS",
+        "werkzeug.wrappers.request"
+      ],
+      [
+        "werkzeug.wrappers.request",
+        "IMPORTS",
+        "werkzeug.test"
+      ],
+      [
+        "werkzeug.wrappers.request.Request.make_form_data_parser",
+        "CALLS",
+        "werkzeug.wrappers.request.Request._private_make_form_data_parser"
+      ],
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "werkzeug.wrappers"
+      ],
+      [
+        "werkzeug.wrappers.request.Request._get_stream_for_parsing",
+        "CALLS",
+        "werkzeug.wrappers.request.Request._private_get_stream_for_parsing"
+      ],
+      [
+        "werkzeug.wrappers.request.Request",
+        "CONTAINS",
+        "werkzeug.wrappers.request.Request._private_get_stream_for_parsing"
+      ],
+      [
+        "werkzeug.wrappers.request.Request._parse_form_data",
+        "CALLS",
+        "werkzeug.wrappers.request.Request._private_make_form_data_parser"
+      ],
+      [
+        "werkzeug.utils",
+        "CONTAINS",
+        "werkzeug.utils.ImportStringError"
+      ]
+    ],
+    "latency_s": 0.55,
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "exact_match": false,
+    "f1": 0.28571428571428575
+  },
+  {
+    "question": "Name a class defined in a module that `werkzeug.wrappers.response` imports.",
+    "category": "answerable",
+    "hops": 2,
+    "gold_answer": "werkzeug.exceptions.NotAcceptable",
+    "generated_answer": "werkzeug.wrappers.response.Response",
+    "seeds": [
+      "werkzeug.wrappers.response",
+      "werkzeug.wrappers.response.Response._is_range_request_processable",
+      "werkzeug.wrappers.response.Response.calculate_content_length"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.wrappers.request"
+      ],
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "werkzeug.wrappers.response"
+      ],
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug._internal"
+      ],
+      [
+        "werkzeug.test",
+        "IMPORTS",
+        "werkzeug.wrappers.response"
+      ],
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.test"
+      ],
+      [
+        "werkzeug.wrappers.response.Response",
+        "CONTAINS",
+        "werkzeug.wrappers.response.Response.calculate_content_length"
+      ],
+      [
+        "werkzeug.wrappers.response.Response.calculate_content_length",
+        "CALLS",
+        "werkzeug.wrappers.response.Response.iter_encoded"
+      ],
+      [
+        "werkzeug.wrappers.response.Response.calculate_content_length",
+        "CALLS",
+        "werkzeug.wrappers.response.Response._ensure_sequence"
+      ],
+      [
+        "werkzeug.wrappers.response.Response",
+        "CONTAINS",
+        "werkzeug.wrappers.response.Response.__repr__"
+      ],
+      [
+        "werkzeug.wrappers.response.Response.__repr__",
+        "CALLS",
+        "werkzeug.wrappers.response.Response.iter_encoded"
+      ],
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "werkzeug.wrappers"
+      ]
+    ],
+    "latency_s": 0.51,
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "exact_match": false,
+    "f1": 0.28571428571428575
+  },
+  {
+    "question": "Name a class defined in a module that `werkzeug.sansio.response` imports.",
+    "category": "answerable",
+    "hops": 2,
+    "gold_answer": "werkzeug.datastructures.structures._ImmutableDict",
+    "generated_answer": "werkzeug.sansio.response.Response",
+    "seeds": [
+      "werkzeug.sansio.response",
+      "werkzeug.sansio.response.Response._set_www_authenticate",
+      "werkzeug.sansio.response.Response.mimetype_params"
+    ],
+    "retrieved_triples": [
+      [
+        "werkzeug.sansio.response",
+        "IMPORTS",
+        "werkzeug.utils"
+      ],
+      [
+        "werkzeug.sansio.response",
+        "CONTAINS",
+        "werkzeug.sansio.response.Response"
+      ],
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.sansio.response"
+      ],
+      [
+        "werkzeug.sansio.response.Response",
+        "CONTAINS",
+        "werkzeug.sansio.response.Response._set_www_authenticate"
+      ],
+      [
+        "werkzeug.sansio.response",
+        "IMPORTS",
+        "werkzeug.http"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.sansio.response"
+      ],
+      [
+        "werkzeug._header_property",
+        "IMPORTS",
+        "werkzeug.sansio.response"
+      ],
+      [
+        "werkzeug.http",
+        "IMPORTS",
+        "werkzeug.sansio"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.sansio"
+      ],
+      [
+        "werkzeug",
+        "CONTAINS",
+        "werkzeug.sansio.utils"
+      ],
+      [
+        "werkzeug.sansio.response.Response",
+        "CONTAINS",
+        "werkzeug.sansio.response.Response.__repr__"
+      ],
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "werkzeug._internal"
+      ]
+    ],
+    "latency_s": 0.53,
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "exact_match": false,
+    "f1": 0.25
+  }
+]

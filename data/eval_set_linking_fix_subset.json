@@ -1,0 +1,128 @@
+[
+  {
+    "question": "Name a class defined in a module that `werkzeug.utils` imports.",
+    "gold_answer": "markupsafe.Markup",
+    "gold_triples": [
+      [
+        "werkzeug.utils",
+        "IMPORTS",
+        "markupsafe"
+      ],
+      [
+        "markupsafe",
+        "CONTAINS",
+        "markupsafe.Markup"
+      ]
+    ],
+    "hops": 2,
+    "category": "answerable"
+  },
+  {
+    "question": "Name a class defined in a module that `jinja2.ext` imports.",
+    "gold_answer": "jinja2.runtime.DebugUndefined",
+    "gold_triples": [
+      [
+        "jinja2.ext",
+        "IMPORTS",
+        "jinja2.runtime"
+      ],
+      [
+        "jinja2.runtime",
+        "CONTAINS",
+        "jinja2.runtime.DebugUndefined"
+      ]
+    ],
+    "hops": 2,
+    "category": "answerable"
+  },
+  {
+    "question": "Name a class defined in a module that `jinja2.runtime` imports.",
+    "gold_answer": "jinja2.environment.TemplateExpression",
+    "gold_triples": [
+      [
+        "jinja2.runtime",
+        "IMPORTS",
+        "jinja2.environment"
+      ],
+      [
+        "jinja2.environment",
+        "CONTAINS",
+        "jinja2.environment.TemplateExpression"
+      ]
+    ],
+    "hops": 2,
+    "category": "answerable"
+  },
+  {
+    "question": "Name a class defined in a module that `werkzeug.formparser` imports.",
+    "gold_answer": "werkzeug.sansio.multipart.File",
+    "gold_triples": [
+      [
+        "werkzeug.formparser",
+        "IMPORTS",
+        "werkzeug.sansio.multipart"
+      ],
+      [
+        "werkzeug.sansio.multipart",
+        "CONTAINS",
+        "werkzeug.sansio.multipart.File"
+      ]
+    ],
+    "hops": 2,
+    "category": "answerable"
+  },
+  {
+    "question": "Name a class defined in a module that `werkzeug.wrappers.request` imports.",
+    "gold_answer": "werkzeug.datastructures.structures.CallbackDict",
+    "gold_triples": [
+      [
+        "werkzeug.wrappers.request",
+        "IMPORTS",
+        "werkzeug.datastructures.structures"
+      ],
+      [
+        "werkzeug.datastructures.structures",
+        "CONTAINS",
+        "werkzeug.datastructures.structures.CallbackDict"
+      ]
+    ],
+    "hops": 2,
+    "category": "answerable"
+  },
+  {
+    "question": "Name a class defined in a module that `werkzeug.wrappers.response` imports.",
+    "gold_answer": "werkzeug.exceptions.NotAcceptable",
+    "gold_triples": [
+      [
+        "werkzeug.wrappers.response",
+        "IMPORTS",
+        "werkzeug.exceptions"
+      ],
+      [
+        "werkzeug.exceptions",
+        "CONTAINS",
+        "werkzeug.exceptions.NotAcceptable"
+      ]
+    ],
+    "hops": 2,
+    "category": "answerable"
+  },
+  {
+    "question": "Name a class defined in a module that `werkzeug.sansio.response` imports.",
+    "gold_answer": "werkzeug.datastructures.structures._ImmutableDict",
+    "gold_triples": [
+      [
+        "werkzeug.sansio.response",
+        "IMPORTS",
+        "werkzeug.datastructures.structures"
+      ],
+      [
+        "werkzeug.datastructures.structures",
+        "CONTAINS",
+        "werkzeug.datastructures.structures._ImmutableDict"
+      ]
+    ],
+    "hops": 2,
+    "category": "answerable"
+  }
+]
