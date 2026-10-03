@@ -179,10 +179,11 @@ noticed. No new KG data, no bigger graph — same system, measured harder.
 `gnn_ablation.py` trains GraphSAGE, GCN, and GAT (`torch_geometric.nn.GATConv`,
 4 attention heads — layer 1 concatenates 4 heads back to `hidden_dim`, layer 2 uses a
 single head to match the other encoders' output shape) on the **identical**
-train/val/test edge split (`gnn.make_split`, reseeded to `SPLIT_SEED=42` immediately
-before every split call, verified deterministic by
-`test_split_is_deterministic_across_repeated_calls`) — same negative sampling, same
-100 epochs, same dot-product decoder, so the comparison isolates the encoder choice.
+80/10/10 train/val/test edge split (`gnn.make_split`'s `RandomLinkSplit(num_val=0.1,
+num_test=0.1, ...)`, reseeded to `SPLIT_SEED=42` immediately before every split call,
+verified deterministic by `test_split_is_deterministic_across_repeated_calls`) — same
+negative sampling, same 100 epochs, same dot-product decoder, so the comparison
+isolates the encoder choice.
 Each architecture's embeddings then ran through the full 71-question eval harness.
 
 | architecture | test AUC | test AP | train time | params | recall@k | EM | F1 | halluc. rate |
